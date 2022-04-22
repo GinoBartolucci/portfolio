@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <profile-about></profile-about>
+    <p>asdasd</p>
+    <skills-component></skills-component>
+    <portfolio-experience></portfolio-experience>
+    <social-media></social-media>    
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PortfolioExperience from './components/PortfolioExperience.vue';
+import ProfileAbout from './components/ProfileAbout.vue';
+import SocialMedia from './components/SocialMedia.vue';
+import SkillsComponent from './components/SkillsComponent.vue';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  components: { ProfileAbout, PortfolioExperience, SocialMedia, SkillsComponent},
+  data(){
+    
+    }
+}   
 </script>
 
 <style>
+body{
+  margin:0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
