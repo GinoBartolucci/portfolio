@@ -12,17 +12,20 @@ const app = createApp(App);
     //Components
     import Button from 'primevue/button'
     import InputText from 'primevue/inputtext'
-    import ConfirmationService from 'primevue/confirmationservice';
+    import ConfirmationService from 'primevue/confirmationservice';    
+    import Card from 'primevue/card';
 
-        app.component('ButtonComponent', Button);
-        app.component('InputText',InputText);
-        app.component('ConfirmDialog', ConfirmDialog);
-        app.use(ConfirmationService);
-        
-        app.use(PrimeVue);
+    app.component('ButtonComponent', Button);
+    app.component('InputText',InputText);
+    app.component('ConfirmDialog', ConfirmDialog);
+    app.component('CardComponent', Card)
+    app.use(ConfirmationService);
+    
+    app.use(PrimeVue);
 
-
-
+/*PrimeFlex */
+    import PrimeFlex from '/node_modules/primeflex/primeflex.css'
+    app.use(PrimeFlex);
 
 
 

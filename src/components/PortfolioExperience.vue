@@ -1,12 +1,18 @@
 <template>
-    <div id="mainPortfolioExperience">
+    <div id="mainPortfolioExperience" >
         <h1>Mis proyectos</h1>
-        <p id="proyectosText">Hi, my name is Gino Bartolucci</p>
+        <div class="flex justify-content-center flex-wrap card-container">
+            <card-experience class="align-items-center justify-content-center"></card-experience>
+            <card-experience class="align-items-center justify-content-center"></card-experience>            
+            <card-experience class="align-items-center justify-content-center"></card-experience>
+        </div>
     </div>
 </template>
 
 <script>
+import CardExperience from './CardExperience.vue'
 export default {
+  components: { CardExperience },
     setup() {
         
     },

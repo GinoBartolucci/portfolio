@@ -1,7 +1,6 @@
 <template>
   <div>
     <profile-about></profile-about>
-    <p>asdasd</p>
     <skills-component></skills-component>
     <portfolio-experience></portfolio-experience>
     <social-media></social-media>    
