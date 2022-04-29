@@ -1,14 +1,16 @@
 <template>
-    <div id="mainSocialMedia">
-        <h1>Contactame</h1>
-        <p id="proyectosText">Hi, my name is Gino Bartolucci</p>
-        <div>
-            <InputText v-model="text"/>
-            <ConfirmDialog></ConfirmDialog>
-            <Button @click="eliminar"  text="Confirm">Enviar</Button>
+    <div id="main-social-media">
+        <h1 id="social-media-title">Contactame</h1>
+        <p id="social-media-text">Podes contactarme por mail o en mis redes sociales</p>
+        <form >
+            <input type="text" v-model="text"/>
+            <input type="text" v-model="text"/>
+            <input type="text" v-model="text"/>
+            <input type="text" v-model="text"/>
+            <button @click="eliminar"  text="Confirm">Enviar</button>
             <br/>
             {{text}}
-        </div>
+        </form>
     </div>
     
 </template>
@@ -38,15 +40,53 @@ export default {
 </script>
 
 <style scoped>
-h1{
-    color: #f0ffff;
-}
-#mainSocialMedia
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@200;300&display=swap');
+
+#main-social-media
 {
-    background-color: #4D4C7D;
-    padding: 32px;
+    background-color: #ffeafe;
+    padding: 12vh 1rem;
 }
-#proyectosText{
-    color: #f0ffff;
+#social-media-title{
+  color: #1b1b1b;
+  margin: 2rem;
+  font-family: 'Bebas Neue', cursive;
+  font-size: calc(3rem + 3vw);
+}
+#social-media-text{
+    color: #1b1b1b;
+    font-size: calc(1rem + 1vw)
+}
+input{
+  background-color: #ffffff;
+  font-size: calc(1rem + 1vw);
+  padding: 1rem;  
+  margin: 1.5rem;
+  border: 3px solid transparent;
+  border-radius: 0.3rem;
+  width: 50%;  
+}
+input:hover{
+  border: 3px solid #1b1b1b;
+}
+button{
+  background-color: #ffffff;
+  color:#1b1b1b;
+  font-size: calc(1rem + 1vw);
+  padding: 1rem;
+  margin: 1.5rem;
+  border: 3px solid transparent;
+  border-radius: 0.3rem;
+  width: 30%;
+  
+}
+button:hover{
+  border: 3px solid #1b1b1b;
+}
+form{
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  align-items: center;
 }
 </style>

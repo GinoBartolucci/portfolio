@@ -1,37 +1,80 @@
 <template>
-    <div  id="mainSkills">
-                <div class="flex justify-content-center flex-wrap card-container">
-                    <div class="col-12">
-                        <h1>Skills</h1>
-                    </div>
-                    <div class="align-items-center justify-content-center m-3 skilsCard">
-                        <h3>Tecnologies</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, voluptatum?</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, voluptatum?</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, voluptatum?</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, voluptatum?</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, voluptatum?</p>
-                    </div>
-                    <div class="align-items-center justify-content-center m-3 skilsCard">
-                        <h3>Soft skils</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, voluptatum?</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, voluptatum?</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, voluptatum?</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, voluptatum?</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, voluptatum?</p>
-                    </div>
-                    <div class="align-items-center justify-content-center m-3 skilsCard">
-                        <h3>Languages</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, voluptatum?</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, voluptatum?</p>
-                    </div>
-                </div>
-       
+    <div  id="main-skills">                
+        <div>
+            <h1 id="title-skills">My Skills</h1>
+        </div>
+        <div class="card-container-skills">
+            <div>                
+                <img alt="español Logo" src="../assets/arg-logo.png"><p>Español</p>
+            </div>
+            <div>                
+                <img alt="english Logo" src="../assets/eng-logo.png"><p>English</p>
+            </div>
+        </div>
+        <div class="card-container-skills">            
+            <div>                
+                <img alt="Node.js Logo" src="../assets/node-logo.png"><p>Node</p>
+            </div>
+            <div>                
+                <img alt="css Logo" src="../assets/css-logo.png"><p>CSS</p>
+            </div>
+            <div>
+                <img alt="html Logo" src="../assets/html-logo.png"><p>HTML</p>
+            </div>
+            <div>
+                <img alt="java script Logo" src="../assets/javascript-logo.png"><p>Java Script</p>
+            </div>            
+            <div>
+                <img alt="csharp Logo" src="../assets/csharp-logo.png"><p>C#</p>
+            </div>  
+            <div>
+                <img alt="git Logo" src="../assets/git-logo.png"><p>Git</p>
+            </div>   
+            <div>
+                <img alt="vue Logo" src="../assets/vue-logo.png"><p>Vue</p>
+            </div>        
+        </div>
     </div>
 </template>
 
 <script>
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 export default {
+    mounted() {
+        gsap.registerPlugin(ScrollTrigger);
+
+        // gsap.from(".title-skills",{
+        //         scrollTrigger: {
+        //             trigger: "#main-skills",
+        //             start: "0 70%",
+        //             end: "200 center",
+        //             toggleActions: "play none none reverse"
+        //         },
+        //         y:50,
+        //         duration: 0.5,
+        //         opacity: 0
+        //     }
+        // )
+        // const vallado = [[-50,50], [0,50], [50,50]]
+        // gsap.utils.toArray(".skills-card").forEach((cardE, i)=> {
+        //     gsap.from(cardE,{
+        //         scrollTrigger: {
+        //             trigger: cardE,
+        //             start: "0 85%",
+        //             end: "50 center",
+        //             toggleActions: "play none none reverse"
+        //         },
+        //         x: vallado[i][0],
+        //         y: vallado[i][1],
+        //         duration: 0.5,
+        //         opacity: 0                
+        //     }
+        // )
+        // })  
+
+    },
     setup() {
         
     },
@@ -39,21 +82,45 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@200;300&display=swap');
 
-h1, h3,h6{
-    color: #f0ffff;
+html{
+    font-size: 16px;
 }
-#mainSkills{
-    background-color: #406882;
-    padding: 32px;
+
+#main-skills{
+    background-color: #ffeafe;
+    padding: 12vh 1rem;    
 }
-#skilsText{
-    color: #f0ffff;
+#title-skills{    
+    color: #1b1b1b;
+    margin: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: calc(3rem + 3vw);
 }
-.skilsCard{
-    width: 200px;
+.card-container-skills{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
 }
-.skilsCard p{
-    color: #f0ffff;
+.card-container-skills div{
+    padding: 1rem;
+    margin: 2rem 5%;
+    max-height: 250px; 
+    max-width: 250px;   
+}
+.card-container-skills div img{
+    padding: 0.5rem;
+    max-width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+.card-container-skills div p{
+    font-size: 2rem;
+    margin: 0;
+    letter-spacing: 0.5rem;
+    font-weight: 400;
 }
 </style>

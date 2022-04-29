@@ -1,7 +1,9 @@
 <template>
-    <div id="mainAbout">
-        <h1>Gino Bartolucci</h1>
-        <p id="aboutText">Hi, my name is Gino Bartolucci</p>
+    <div id="main-about">
+        <div id="about-conteiner">
+            <h1 id="about-title">About</h1>
+            <p id="about-text">Hi, my name is Gino Bartolucci, i'm from Argentina. I'm studing Sistem Ingeniering</p>
+        </div>
     </div>
 </template>
 
@@ -14,14 +16,28 @@ export default {
 </script>
 
 <style scoped>
-h1{
-    color: #f0ffff;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@200;300&display=swap');
+
+html{
+    font-size: 16px;
 }
-#mainAbout{
-    background-color: #1B262C;
-    padding: 32px;
+#main-about{
+    background-color: #ffeafe;
+    padding: 12vh 1rem;
+    }
+#about-conteiner{
+    display: flex;
+    justify-content: right;
+    flex-flow: column wrap;
 }
-#aboutText{
-    color: #f0ffff;
+#about-title{
+    color: #1b1b1b;
+    margin: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: calc(3rem + 3vw);
+}
+#about-text{
+    color: #1b1b1b;
+    font-size: calc(1rem + 1vw)
 }
 </style>

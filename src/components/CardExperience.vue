@@ -1,6 +1,6 @@
 <template>
 <div>
-    <CardComponent class="card m-3">
+    <CardComponent class="card">
         <template #header>
             <img alt="user header" src="https://www.primefaces.org/primevue/demo/images/usercard.png">
         </template>
@@ -27,17 +27,10 @@ export default {
 </script>
 
 <style scoped>
-h1{
-    color: #f0ffff;
-}
-#mainPortfolioExperience{
-    background-color: #6789BA;
-    padding: 32px;
-}
-#proyectosText{
-    color: #f0ffff;
-}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@200;300&display=swap');
+
 .card{
     width: 300px;
+    margin: 1rem;
 }
 </style>
