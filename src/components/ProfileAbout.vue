@@ -1,43 +1,70 @@
 <template>
-    <div id="main-about">
-        <div id="about-conteiner">
-            <h1 id="about-title">About</h1>
-            <p id="about-text">Hi, my name is Gino Bartolucci, i'm from Argentina. I'm studing Sistem Ingeniering</p>
-        </div>
+  <div id="main-about">
+    <div class="container">
+      <div id="about-conteiner">
+        <h1 class="title">About</h1>
+        <p id="about-text">
+          ¡Hola! Mi nombre es Gino Bartolucci, vivo en argentina. Estoy
+          estudiando Ingenieria en Sistemas, aunque tambien soy atodidacta.
+          Siempre estoy conociendo tecnologias nuevas o estudiando las que ya se
+          para mejorar. Lo que mas me gusta hacer es Experiencia de Usurio y
+          Diseño de Sistemas.
+        </p>
+        <p id="about-text">
+          En este momento estoy aprendiendo freamworks frontend. En el futuro me
+          gustaria ver Solidity, GO, Django y WebAssembly.
+        </p>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 export default {
-    setup() {
-        
-    },
-}
+  mounted() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray("#about-text").forEach((cardE) => {
+      gsap.from(cardE, {
+        scrollTrigger: {
+          trigger: cardE,
+          start: "0 85%",
+          toggleActions: "play none none reverse",
+        },
+        y: 0,
+        duration: 1,
+        opacity: 0,
+      });
+    });
+  },
+  setup() {},
+};
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@200;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@200;300&display=swap");
 
-html{
-    font-size: 16px;
+html {
+  font-size: 16px;
 }
-#main-about{
-    background-color: #ffeafe;
-    padding: 12vh 1rem;
-    }
-#about-conteiner{
-    display: flex;
-    justify-content: right;
-    flex-flow: column wrap;
+#main-about {
+  background-color: #ffeafe;
+  padding: 12vh 1rem;
 }
-#about-title{
-    color: #1b1b1b;
-    margin: 2rem;
-    font-family: 'Bebas Neue', cursive;
-    font-size: calc(3rem + 3vw);
+#about-conteiner {
+  display: flex;
+  justify-content: right;
+  flex-flow: column wrap;
 }
-#about-text{
-    color: #1b1b1b;
-    font-size: calc(1rem + 1vw)
+#about-text {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px 20px 20px;
+  color: #1b1b1b;
+  font-size: calc(1rem + 1vw);
 }
 </style>
