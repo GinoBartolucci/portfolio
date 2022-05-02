@@ -4,15 +4,15 @@
       <div id="about-conteiner">
         <h1 class=titles>About</h1>
         <p id="about-text">
-          ¡Hola! Mi nombre es Gino Bartolucci, vivo en argentina. Estoy
-          estudiando Ingenieria en Sistemas, aunque tambien soy atodidacta.
-          Siempre estoy conociendo tecnologias nuevas o estudiando las que ya se
-          para mejorar. Lo que mas me gusta hacer es Experiencia de Usurio y
-          Diseño de Sistemas.
+          ¡Hola! Mi nombre es Gino
+          Bartolucci, vivo en argentina. Estoy estudiando Ingeniería en Sistemas, 
+          aunque también soy autodidacta. Siempre estoy conociendo tecnologías nuevas 
+          o estudiando las que ya se para mejorar. Lo que más me gusta hacer es Experiencia 
+          de Usuario y Diseño de Sistemas. 
         </p>
         <p id="about-text">
-          En este momento estoy aprendiendo freamworks frontend. En el futuro me
-          gustaria ver Solidity, GO, Django y WebAssembly.
+          En este momento estoy aprendiendo freamworks frontend. En el futuro me gustaría 
+          ver Solidity, GO, Django y WebAssembly.
         </p>
       </div>
     </div>

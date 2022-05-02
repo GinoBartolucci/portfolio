@@ -6,7 +6,7 @@
       <experience-card class="experience-card"
         :cardImage="'academia-card.jpg'"
         :cardTitle="'Academia'"
-        :cardText="'Proyecto academico. Se debia crear un sistema para gestionar Alumnos y Profesores en el ambito academico. La Solucion consta de una <b>aplicacion de escritorio</b> y una <b>aplicacion web</b>. Se utilizo <b>.net</b> para las aplicaciones y <b>SQLServer</b> para la base de datos'"
+        :cardText="'Proyecto académico. Se debía crear un sistema para gestionar Alumnos y Profesores en el ámbito académico. La Solución consta de una <b>aplicación de escritorio</b> y una <b>aplicación web</b>. Utilicé <b>.net</b> para las aplicaciones y <b>SQLServer</b> para la base de datos.'"
         :deploydisabled="true" 
         :gitdisabled="false" 
         :gitLink="'https://github.com/GinoBartolucci/Net-TP2-Grupo1'">

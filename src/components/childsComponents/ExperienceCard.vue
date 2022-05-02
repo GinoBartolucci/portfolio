@@ -18,7 +18,7 @@
         <i class="pi pi-github"></i>
       </button>
       <button @click="deploy" :class="{buttonDisabled: deploydisabled}" :disabled="deploydisabled" >
-        Deploy
+        Demo
         <i class="pi pi-external-link"></i>
       </button>
     </div>
@@ -57,7 +57,7 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;800&display=swap");
 
 .card {
-  border: 3px solid #1b1b1b;
+  border: 1px solid #1b1b1b;
   background-color: #f4f4f4;
   color: #1b1b1b;
   margin: 1rem;
@@ -77,7 +77,7 @@ export default {
 .card-image img {
   width: 100%;
   object-fit: contain;
-  border-bottom: 3px solid #1b1b1b;
+  border-bottom: 1px solid #1b1b1b;
 }
 .card-title {
   font-size: 1.8rem;

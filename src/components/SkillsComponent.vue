@@ -55,6 +55,10 @@
           <img alt="vue Logo" src="../assets/logos/vue-logo.png" />
           <p>Vue</p>
         </div>
+        <div>
+          <img alt="Net Framework Logo" src="../assets/logos/net-logo.png" />
+          <p>.Net Framework</p>
+        </div>
       </div>
     </div>
   </div>

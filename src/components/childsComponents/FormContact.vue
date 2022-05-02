@@ -5,7 +5,7 @@
         <label>Nombre:</label>
         <input
         type="text" 
-        placeholder="Ej: Gino, from GitHub"
+        placeholder="Gino, from Google"
         name="name" 
         :class="{inputError: errors.wrongName}"
         v-model="name"    
@@ -15,27 +15,27 @@
         <label>Asunto:</label>
         <input
         type="text" 
-        placeholder="Ej: Oferta"
+        placeholder="Oferta..."
         name="subjet" 
         :class="{inputError: errors.wrongSubjet}"
         v-model="subjet"    
         />
       </div>
       <div class="input-group">
-        <label>Su email:</label>
+        <label>Email:</label>
         <input
         type="email" 
-        placeholder="Email"
+        placeholder="mail@mail.com"
         name="email" 
         :class="{inputError: errors.wrongEmail}"
         v-model="email"    
         />
       </div>
       <div class="input-group">
-        <label>Su mensaje:</label>
+        <label>Mensaje:</label>
         <textarea
           type="text"
-          placeholder="Mensaje"
+          placeholder="Mensaje..."
           name="message"          
           :class="{inputError: errors.wrongMessage}"                  
           v-model="message" 
@@ -161,6 +161,7 @@ label {
 }
 input,
 textarea {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   background-color: #ffffff;
   font-size: calc(1rem + 1vw);
   padding: 1rem;
