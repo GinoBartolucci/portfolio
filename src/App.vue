@@ -29,7 +29,7 @@ export default {
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.utils.toArray(".title").forEach((cardE) => {
+    gsap.utils.toArray(".titles").forEach((cardE) => {
       gsap.from(cardE, {
         scrollTrigger: {
           trigger: cardE,
@@ -37,7 +37,7 @@ export default {
           toggleActions: "play none none reverse",
         },
         y: 50,
-        duration: 1.2,
+        duration: 0.7,
         opacity: 0,
       });
     });
@@ -58,7 +58,7 @@ body {
   max-width: 1320px;
   margin: auto;
 }
-.title {
+.titles {
   color: #1b1b1b;
   margin: 2rem;
   font-family: "Bebas Neue", cursive;

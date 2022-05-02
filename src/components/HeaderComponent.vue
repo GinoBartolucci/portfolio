@@ -1,11 +1,12 @@
 <template>
   <div id="main-header">
-    <div class="container">
+    <div id="nombrePrecentacion">
       <h1 id="header-title">Gino Bartolucci</h1>
-      <br />
       <p id="header-text">Full Stack Developer</p>
     </div>
-    <nav-bar></nav-bar>
+    <div id="downIcon">
+      <img alt="down icon" src="../assets/logos/arr-logo.png" />
+    </div>
   </div>
 </template>
 
@@ -35,6 +36,10 @@ export default {
       duration: 2,
       opacity: 0,
     });
+    gsap
+      .timeline({ repeat: -1 })
+      .fromTo("#downIcon", { y: 0 }, { y: 2 })
+      .fromTo("#downIcon", { y: 2 }, { y: 0 });
   },
   setup() {},
 };
@@ -48,28 +53,44 @@ html {
 }
 #main-header {
   background-color: #1b1b1b;
-  padding: 32px 10px;
+  padding: 0 10px 0 10px;
   min-height: 100vh;
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  font-family: "Fira Sans", sans-serif;
+}
+#nombrePrecentacion {
+  text-align: center;
 }
 #header-title {
-  color: #ffcbff;
-  font-size: calc(3rem + 5vw);
+  color: #f4f4f4;
+  font-size: calc(2rem + 3vw);
   font-weight: 800;
   letter-spacing: 2vw;
   margin: 0 0 1rem 0;
+  font-family: "Bebas Neue", sans-serif;
 }
 #header-text {
-  color: #ffcbff;
+  color: #f4f4f4;
   font-size: calc(1rem + 2vw);
   font-weight: 400;
-  letter-spacing: 1.5vw;
+  letter-spacing: 1.1vw;
   font-family: "Fira Sans", sans-serif;
   margin: 0.5rem 0 0 0;
+}
+#downIcon {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  padding: 0.5rem;
+  bottom: 0;
+
+}
+#downIcon img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
 }
 @media (min-width: 2445px) {
   #header-text,

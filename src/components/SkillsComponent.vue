@@ -2,57 +2,57 @@
   <div id="main-skills">
     <div class="container">
       <div>
-        <h1 class="title">My Skills</h1>
+        <h1 class="titles">My Skills</h1>
       </div>
       <div class="card-container-skills">
         <div>
-          <img alt="español Logo" src="../assets/arg-logo.png" />
+          <img alt="español Logo" src="../assets/logos/arg-logo.png" />
           <p>Español</p>
         </div>
         <div>
-          <img alt="english Logo" src="../assets/eng-logo.png" />
+          <img alt="english Logo" src="../assets/logos/eng-logo.png" />
           <p>English</p>
         </div>
       </div>
       <div class="card-container-skills">
         <div>
-          <img alt="Node.js Logo" src="../assets/node-logo.png" />
+          <img alt="Node.js Logo" src="../assets/logos/node-logo.png" />
           <p>Node</p>
         </div>
         <div>
-          <img alt="mysql Logo" src="../assets/mql-logo.png" />
+          <img alt="mysql Logo" src="../assets/logos/mql-logo.png" />
           <p>SQL</p>
         </div>
         <div>
-          <img alt="express Logo" src="../assets/exp-logo.png" />
+          <img alt="express Logo" src="../assets/logos/exp-logo.png" />
           <p>Express</p>
         </div>
         <div>
-          <img alt="css Logo" src="../assets/css-logo.png" />
+          <img alt="css Logo" src="../assets/logos/css-logo.png" />
           <p>CSS</p>
         </div>
         <div>
-          <img alt="html Logo" src="../assets/html-logo.png" />
+          <img alt="html Logo" src="../assets/logos/html-logo.png" />
           <p>HTML</p>
         </div>
         <div>
-          <img alt="java script Logo" src="../assets/javascript-logo.png" />
+          <img alt="java script Logo" src="../assets/logos/javascript-logo.png" />
           <p>Java Script</p>
         </div>
         <div>
-          <img alt="csharp Logo" src="../assets/csharp-logo.png" />
+          <img alt="csharp Logo" src="../assets/logos/csharp-logo.png" />
           <p>C#</p>
         </div>
         <div>
-          <img alt="Python Logo" src="../assets/pyt-logo.png" />
+          <img alt="Python Logo" src="../assets/logos/pyt-logo.png" />
           <p>Python</p>
         </div>
         <div>
-          <img alt="git Logo" src="../assets/git-logo.png" />
+          <img alt="git Logo" src="../assets/logos/git-logo.png" />
           <p>Git</p>
         </div>
         <div>
-          <img alt="vue Logo" src="../assets/vue-logo.png" />
+          <img alt="vue Logo" src="../assets/logos/vue-logo.png" />
           <p>Vue</p>
         </div>
       </div>
@@ -76,7 +76,7 @@ export default {
           toggleActions: "play none none reverse",
         },
         y: 50,
-        duration: 1,
+        duration: 0.7,
         opacity: 0,
       });
     });
@@ -93,8 +93,8 @@ html {
 }
 
 #main-skills {
-  background-color: #ffeafe;
-  padding: 12vh 1rem;
+  background-color: #f4f4f4;
+  padding: 5vh 1rem;
 }
 .card-container-skills {
   display: flex;
@@ -119,7 +119,7 @@ html {
   font-size: 1.5rem;
   margin: 0;
   letter-spacing: 0.5rem;
-  font-weight: 200;
+  font-weight: 300;
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 </style>

@@ -1,36 +1,19 @@
 <template>
   <div id="main-social-media">
     <div class="container">
-      <h1 class="title">Contactame</h1>
+      <h1 class="titles">Contacto</h1>
       <div id="social-media">
         <a href="https://github.com/GinoBartolucci" target="_blank">
-          <img alt="github Logo" src="../assets/hub-logo.png" />
+          <img alt="github Logo" src="../assets/logos/hub-logo.png" />
         </a>
         <a href="https://www.linkedin.com/in/ginobartolucci/" target="_blank">
-          <img alt="linkdin  Logo" src="../assets/lin-logo.png" />
+          <img alt="linkdin  Logo" src="../assets/logos/lin-logo.png" />
         </a>
         <a href="https://www.instagram.com/gino_bartolucci/" target="_blank">
-          <img alt="Instagram Logo" src="../assets/ins-logo.png" />
+          <img alt="Instagram Logo" src="../assets/logos/ins-logo.png" />
         </a>
       </div>
-      <form>
-        <div id="form-body">
-          {{ errors }}
-          <div class="input-group">
-            <label>Su email:</label>
-            <input id="name" v-model="email" type="email" name="email" />
-            {{ email }}
-          </div>
-          <div class="input-group">
-            <label>Su mensaje:</label>
-            <textarea id="message" v-model="message" name="message"></textarea>
-            {{ message }}
-          </div>
-          <div class="input-group">
-            <button @click="checkForm" type="submit">Send</button>
-          </div>
-        </div>
-      </form>
+      <form-contact></form-contact>
     </div>
   </div>
 </template>
@@ -39,7 +22,12 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import FormContact from "./childsComponents/FormContact.vue";
+
 export default {
+  components: {
+    FormContact,
+  },
   data() {
     return {
       message: null,
@@ -49,22 +37,19 @@ export default {
   },
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from("#social-media", {
+      scrollTrigger: {
+        trigger: "#social-media",
+        start: "0 100%",
+        toggleActions: "play none none reverse",
+      },
+      y: 50,
+      duration: 0.9,
+      opacity: 0,
+    });
   },
-  methods: {
-    checkForm: function (e) {
-      if (this.email && this.message) {
-        return true;
-      }
-      this.errors = [];
-      if (!this.email) {
-        this.errors.push("El mail es obligatorio.");
-      }
-      if (!this.message) {
-        this.errors.push("El mensaje es obligatorio.");
-      }
-      e.preventDefault();
-    },
-  },
+  methods: {},
 };
 </script>
 
@@ -72,71 +57,36 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@200;300&display=swap");
 
 #main-social-media {
-  background-color: #ffeafe;
-  padding: 12vh 1rem;
+  background-color: #f4f4f4;
+  padding: 5vh 1rem;
 }
 #social-media {
- margin: 0 0 1rem 0;
+  margin: 0 0 1rem 0;
+  display: flex;
+  flex-flow: row nowrap; 
+  align-items: center;
+  justify-content: center;
+}
+#social-media a {
+  margin: 0 15px ;
 }
 #social-media img {
+  margin: 0 15px ;
   max-width: 50px;
   height: 50px;
   padding: 0.5rem;
   max-width: 200px;
-
   object-fit: contain;
 }
-form {
-  margin: 0;
-  padding: 0;
+#social-media img:hover{
+  max-width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  max-width: 200px;
+  object-fit: contain;
+  scale: 1.1;
 }
-#form-body {
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-  margin: auto;
-}
-.input-group {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-label {
-  margin: auto;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  padding: 10px 10px 10px 10px;
-  color: #1b1b1b;
-  font-size: calc(1rem + 1vw);
-  width: 30%;
-}
-input,
-textarea {
-  background-color: #ffffff;
-  font-size: calc(1rem + 1vw);
-  padding: 1rem;
-  margin: 1rem 1.5rem;
-  border: 3px solid transparent;
-  border-radius: 0.3rem;
-  flex: auto;
-  resize: vertical;
-}
-input:hover,
-textarea:hover {
-  border: 3px solid #1b1b1b;
-}
-button {
-  background-color: #ffffff;
-  color: #1b1b1b;
-  font-size: calc(1rem + 1vw);
-  padding: 1rem;
-  margin: 1.5rem;
-  border: 3px solid transparent;
-  border-radius: 0.3rem;
-  flex: auto;
-}
-button:hover {
-  border: 3px solid #1b1b1b;
-}
+
 @media (max-width: 850px) {
   .input-group {
     flex-direction: column;

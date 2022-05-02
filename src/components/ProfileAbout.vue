@@ -2,7 +2,7 @@
   <div id="main-about">
     <div class="container">
       <div id="about-conteiner">
-        <h1 class="title">About</h1>
+        <h1 class=titles>About</h1>
         <p id="about-text">
           ¡Hola! Mi nombre es Gino Bartolucci, vivo en argentina. Estoy
           estudiando Ingenieria en Sistemas, aunque tambien soy atodidacta.
@@ -35,7 +35,7 @@ export default {
           toggleActions: "play none none reverse",
         },
         y: 0,
-        duration: 1,
+        duration: 0.9,
         opacity: 0,
       });
     });
@@ -51,8 +51,8 @@ html {
   font-size: 16px;
 }
 #main-about {
-  background-color: #ffeafe;
-  padding: 12vh 1rem;
+  background-color: #f4f4f4;
+  padding: 5vh 1rem;
 }
 #about-conteiner {
   display: flex;
@@ -64,7 +64,8 @@ html {
   max-width: 1000px;
   margin: auto;
   padding: 0 20px 20px 20px;
-  color: #1b1b1b;
+  color: #1b1b1b;  
   font-size: calc(1rem + 1vw);
+  
 }
 </style>
