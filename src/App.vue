@@ -27,7 +27,7 @@ export default {
     HeaderComponent,
   },
   mounted() {
-    document.title = "Gino Bartolucci WebPage"
+    document.title = "Gino Bartolucci"
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.utils.toArray(".titles").forEach((cardE) => {

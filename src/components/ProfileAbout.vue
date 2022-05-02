@@ -8,7 +8,7 @@
           Bartolucci, vivo en argentina. Estoy estudiando Ingeniería en Sistemas, 
           aunque también soy autodidacta. Siempre estoy conociendo tecnologías nuevas 
           o estudiando las que ya se para mejorar. Me gusta todo lo relacionado a
-           sistemas pero detaco lo que más me gusta es Experiencia de Usuario y Diseño de Sistemas. 
+           sistemas, pero lo que más me gusta es Experiencia de Usuario y Diseño de Sistemas. 
         </p>
         <p id="about-text">
           En este momento estoy aprendiendo freamworks frontend. En el futuro me gustaría 
