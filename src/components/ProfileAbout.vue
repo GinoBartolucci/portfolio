@@ -4,8 +4,7 @@
       <div id="about-conteiner">
         <h1 class=titles>About</h1>
         <p id="about-text">
-          ¡Hola! Mi nombre es Gino
-          Bartolucci, vivo en argentina. Estoy estudiando Ingeniería en Sistemas, 
+          Mi nombre es Gino Bartolucci, vivo en argentina. Estoy estudiando Ingeniería en Sistemas, 
           aunque también soy autodidacta. Siempre estoy conociendo tecnologías nuevas 
           o estudiando las que ya se para mejorar. Me gusta todo lo relacionado a
            sistemas, pero lo que más me gusta es Experiencia de Usuario y Diseño de Sistemas. 
