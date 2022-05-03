@@ -51,7 +51,6 @@ export default {
 
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@200;300&display=swap");
-
 body {
   margin: 0;
 }
