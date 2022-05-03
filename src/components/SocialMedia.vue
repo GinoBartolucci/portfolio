@@ -71,16 +71,13 @@ export default {
   margin: 0 15px ;
 }
 #social-media img {
-  margin: 0 15px ;
-  max-width: 50px;
-  height: 50px;
+  max-width: 40px;
+  max-height: 40px;
   padding: 0.5rem;
   max-width: 200px;
   object-fit: contain;
 }
 #social-media img:hover{
-  max-width: 50px;
-  height: 50px;
   padding: 0.5rem;
   max-width: 200px;
   object-fit: contain;

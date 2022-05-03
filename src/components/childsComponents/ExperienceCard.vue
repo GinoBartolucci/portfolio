@@ -57,17 +57,16 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;800&display=swap");
 
 .card {
-  border: 1px solid #1b1b1b;
+  margin: 1rem;  
   background-color: #f4f4f4;
-  color: #1b1b1b;
-  margin: 1rem;
+  color: #1b1b1b;  
   max-width: 350px;
-  /* min-height: 450px; */
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
-  border-radius: 3px;
   justify-content: space-between;
+  align-items: center;
+  border: 1px solid #1b1b1b;  
+  border-radius: 3px;  
   -webkit-box-shadow: 10px 10px 9px -7px rgba(0, 0, 0, 0.59);
   -moz-box-shadow: 10px 10px 9px -7px rgba(0, 0, 0, 0.59);
   box-shadow: 10px 10px 9px -7px rgba(0, 0, 0, 0.59);
@@ -80,7 +79,7 @@ export default {
   border-bottom: 1px solid #1b1b1b;
 }
 .card-title {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding: 0.1rem;
 }
 .card-title h2 {
@@ -92,7 +91,7 @@ export default {
   text-align: center;
   padding: 0.5rem;
   font-weight: 300;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: "Fira Sans", sans-serif;
   justify-self: center;
 }
@@ -114,7 +113,7 @@ export default {
   flex-basis: 50%;
   padding: 0.5rem;
   margin: 0.5rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   font-family: "Fira Sans", sans-serif;
   border-radius: 5px;

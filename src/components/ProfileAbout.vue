@@ -1,18 +1,24 @@
 <template>
   <div id="main-about">
     <div class="container">
-      <div id="about-conteiner">
-        <h1 class=titles>About</h1>
-        <p id="about-text">
-          Mi nombre es Gino Bartolucci, vivo en argentina. Estoy estudiando Ingeniería en Sistemas, 
-          aunque también soy autodidacta. Siempre estoy conociendo tecnologías nuevas 
-          o estudiando las que ya se para mejorar. Me gusta todo lo relacionado a
-           sistemas, pero lo que más me gusta es Experiencia de Usuario y Diseño de Sistemas. 
-        </p>
-        <p id="about-text">
-          En este momento estoy aprendiendo freamworks frontend. En el futuro me gustaría 
-          ver Solidity, GO, Django y WebAssembly.
-        </p>
+      <h1 class="titles">About</h1>
+      <div id="about-container">
+        <div id="profile-image">
+          <img alt="profile-image" src="../assets/imgs/profile.jpg" />
+        </div>
+        <div id="about-conteiner-text">
+          <p>
+            Mi nombre es Gino Bartolucci, vivo en argentina. Estoy estudiando
+            Ingeniería en Sistemas, aunque también soy autodidacta. Siempre
+            estoy conociendo tecnologías nuevas o estudiando las que ya se para
+            mejorar. Me gusta todo lo relacionado a sistemas, pero lo que más me
+            gusta es Experiencia de Usuario y Diseño de Sistemas.
+          </p>
+          <p>
+            En este momento estoy aprendiendo freamworks frontend. En el futuro
+            me gustaría ver Solidity, GO, Django y WebAssembly.
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -53,18 +59,40 @@ html {
   background-color: #f4f4f4;
   padding: 5vh 1rem;
 }
-#about-conteiner {
+#about-container{
   display: flex;
-  justify-content: right;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;  
 }
-#about-text {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  max-width: 1000px;
+#profile-image  {
+  border-radius: 50%;
+  margin: 0 2.5rem;
+  max-width: 250px;
+  max-height: 250px;
+  border: 1px solid #1b1b1b; 
+  -webkit-box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
+}
+#profile-image img{
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 50%;   
+}
+#about-conteiner-text {
+  max-width: 800px;
+  padding: 0 0.5rem 0 0.5rem;  
+  display: flex;
+  flex-flow: column nowrap;
+}
+#about-conteiner-text p {
+  color: #1b1b1b;
   margin: auto;
-  padding: 0 20px 20px 20px;
-  color: #1b1b1b;  
-  font-size: calc(1rem + 1vw);
+  text-align:center;
+  padding: 1rem 0.5rem;
+  font-family: Avenir, Helvetica, Arial, sans-serif; 
+  font-size: calc(1.3rem + 0.3vw) ;
   
 }
 </style>

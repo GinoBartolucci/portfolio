@@ -150,32 +150,37 @@ form {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 label {
-  margin: auto;
+  margin: 0 0 0 1rem;
+  text-align: left;
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  padding: 10px 10px 10px 10px;
+  padding: 0 0 0 1rem;
   color: #1b1b1b;
-  font-size: calc(1rem + 1vw);
-  width: 30%;
+  font-size: 1.5rem;
+  flex-basis: 15%;
 }
 input,
 textarea {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   background-color: #ffffff;
-  font-size: calc(1rem + 1vw);
+  font-size: 1.5rem;
   padding: 1rem;
   margin: 1rem 1.5rem;
-  border: 3px solid transparent;
+  border: 1px solid #525252;
   border-radius: 0.3rem;
   flex: auto;
   resize: vertical;
   outline: none;
 }
 input:focus,
-textarea:focus {
-  border: 3px solid #1b1b1b;
+textarea:focus,
+button:hover {
   outline: none;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.59);
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.59);
 }
 button {
   background-color: #ffffff;
@@ -183,32 +188,23 @@ button {
   font-size: calc(1rem + 1vw);
   padding: 1rem;
   margin: 1.5rem;
-  border: 3px solid transparent;
+  border: 1px solid #1b1b1b;
   border-radius: 0.3rem;
   flex: auto;
   outline: none;
 }
-button:hover {
-  border: 3px solid #1b1b1b;
-}
-.inputError {
-  border: 3px solid #f15e5e;
-}.inputError:focus {
-  border: 3px solid #f15e5e;
+
+.inputError, .inputError:focus {
+  border: 1px solid #f15e5e;
 }
 @media (max-width: 850px) {
   .input-group {
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: inherit;
   }
   label {
     margin: 0;
-    text-align: left;
-    width: 90%;
-  }
-  input,
-  textarea {
-    margin-top: 0;
+    text-align: left;    
   }
 }
 </style>

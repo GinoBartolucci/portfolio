@@ -76,7 +76,7 @@ export default {
       gsap.from(cardE, {
         scrollTrigger: {
           trigger: cardE,
-          start: "0 85%",
+          start: "0 90%",
           toggleActions: "play none none reverse",
         },
         y: 50,
@@ -110,17 +110,16 @@ html {
 .card-container-skills div {
   padding: 1rem;
   margin: 2rem 5%;
-  max-height: 250px;
-  max-width: 250px;
+  max-height: 150px;
+  max-width: 150px;
 }
 .card-container-skills div img {
-  padding: 0.5rem;
-  max-width: 200px;
-  height: 200px;
+  max-width: 150px;
+  max-height: 150px;
   object-fit: contain;
 }
 .card-container-skills div p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 0;
   letter-spacing: 0.5rem;
   font-weight: 300;

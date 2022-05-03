@@ -1,8 +1,8 @@
 <template>
   <div id="container">
-    <header-component></header-component>
-    <skills-component></skills-component>
+    <header-component></header-component>    
     <profile-about></profile-about>
+    <skills-component></skills-component>
     <portfolio-experience></portfolio-experience>
     <social-media></social-media>
   </div>
@@ -60,7 +60,7 @@ body {
 }
 .titles {
   color: #1b1b1b;
-  margin: 2rem;
+  margin: 2rem 0 0 0;
   font-family: "Bebas Neue", cursive;
   font-size: calc(3rem + 3vw);
 }
