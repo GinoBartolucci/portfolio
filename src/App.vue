@@ -30,18 +30,18 @@ export default {
     document.title = "Gino Bartolucci"
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.utils.toArray(".titles").forEach((cardE) => {
-      gsap.from(cardE, {
-        scrollTrigger: {
-          trigger: cardE,
-          start: "0 100%",
-          toggleActions: "play none none reverse",
-        },
-        y: 50,
-        duration: 0.7,
-        opacity: 0,
-      });
-    });
+    // gsap.utils.toArray(".titles").forEach((cardE) => {
+    //   gsap.from(cardE, {
+    //     scrollTrigger: {
+    //       trigger: cardE,
+    //       start: "0 100%",
+    //       toggleActions: "play none none reverse",
+    //     },
+    //     y: 50,
+    //     duration: 0.7,
+    //     opacity: 0,
+    //   });
+    // });
   },
   data() {
     return {};

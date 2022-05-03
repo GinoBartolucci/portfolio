@@ -41,7 +41,7 @@ export default {
     gsap.from("#social-media", {
       scrollTrigger: {
         trigger: "#social-media",
-        start: "0 100%",
+        start: "0 90%",
         toggleActions: "play none none reverse",
       },
       y: 50,

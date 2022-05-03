@@ -76,10 +76,10 @@ export default {
       gsap.from(cardE, {
         scrollTrigger: {
           trigger: cardE,
-          start: "0 90%",
+          start: "100 100%",
           toggleActions: "play none none reverse",
         },
-        y: 50,
+        scale: 0.9,       
         duration: 0.7,
         opacity: 0,
       });

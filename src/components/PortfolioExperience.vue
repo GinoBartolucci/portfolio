@@ -31,13 +31,11 @@ export default {
       gsap.from(cardE, {
         scrollTrigger: {
           trigger: cardE,
-          start: "0 100%",
+          start: "0 90%",
           toggleActions: "play none none reverse",
         },
-        y: 50,
-        duration: 0.7,
-        opacity: 0,
-        z: -1,
+        duration: 1.2,
+        opacity: 0        
       });
     });
   },

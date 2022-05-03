@@ -32,17 +32,27 @@ export default {
   mounted() {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.utils.toArray("#about-text").forEach((cardE) => {
+    gsap.utils.toArray("#about-conteiner-text p").forEach((cardE) => {
       gsap.from(cardE, {
         scrollTrigger: {
           trigger: cardE,
-          start: "0 85%",
+          start: "0 90%",
           toggleActions: "play none none reverse",
         },
         y: 0,
-        duration: 0.9,
+        duration: 1.2,
         opacity: 0,
       });
+    });
+    gsap.from("#profile-image", {
+      scrollTrigger: {
+        trigger: "#profile-image",
+        start: "0 90%",
+        toggleActions: "play none none reverse",
+      },
+      y: 0,
+      duration: 1,
+      opacity: 0,
     });
   },
   setup() {},
@@ -59,40 +69,39 @@ html {
   background-color: #f4f4f4;
   padding: 5vh 1rem;
 }
-#about-container{
+#about-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 }
-#profile-image  {
+#profile-image {
   border-radius: 50%;
   margin: 0 2.5rem;
   max-width: 250px;
   max-height: 250px;
-  border: 1px solid #1b1b1b; 
-  -webkit-box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
-  box-shadow: -2px 4px 10px 0px rgba(0,0,0,0.75);
+  border: 1px solid #1b1b1b;
+  -webkit-box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px 4px 10px 0px rgba(0, 0, 0, 0.75);
 }
-#profile-image img{
+#profile-image img {
   max-width: 250px;
   max-height: 250px;
-  border-radius: 50%;   
+  border-radius: 50%;
 }
 #about-conteiner-text {
   max-width: 800px;
-  padding: 0 0.5rem 0 0.5rem;  
+  padding: 0 0.5rem 0 0.5rem;
   display: flex;
   flex-flow: column nowrap;
 }
 #about-conteiner-text p {
   color: #1b1b1b;
   margin: auto;
-  text-align:center;
+  text-align: center;
   padding: 1rem 0.5rem;
-  font-family: Avenir, Helvetica, Arial, sans-serif; 
-  font-size: calc(1.3rem + 0.3vw) ;
-  
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-size: calc(1.3rem + 0.3vw);
 }
 </style>
