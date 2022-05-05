@@ -42,7 +42,7 @@ export default {
       scrollTrigger: {
         trigger: "#social-media",
         start: "0 90%",
-        toggleActions: "play none none reverse",
+        toggleActions: "play none none none",
       },
       y: 50,
       duration: 0.9,

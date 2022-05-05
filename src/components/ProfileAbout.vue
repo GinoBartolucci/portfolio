@@ -37,7 +37,7 @@ export default {
         scrollTrigger: {
           trigger: cardE,
           start: "0 90%",
-          toggleActions: "play none none reverse",
+          toggleActions: "play none none none",
         },
         y: 0,
         duration: 1.2,
@@ -48,7 +48,7 @@ export default {
       scrollTrigger: {
         trigger: "#profile-image",
         start: "0 90%",
-        toggleActions: "play none none reverse",
+        toggleActions: "play none none none",
       },
       y: 0,
       duration: 1,

@@ -32,7 +32,7 @@ export default {
         scrollTrigger: {
           trigger: cardE,
           start: "0 90%",
-          toggleActions: "play none none reverse",
+          toggleActions: "play none none none",
         },
         duration: 1.2,
         opacity: 0        
