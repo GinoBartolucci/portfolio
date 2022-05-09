@@ -1,21 +1,17 @@
 <template>
-  <div id="main-social-media">
-    <div class="container">
-      <h1 class="titles">Contacto</h1>
-      <div id="social-media">
-        <a href="https://github.com/GinoBartolucci" target="_blank">
-          <img alt="github Logo" src="../assets/logos/hub-logo.png" />
-        </a>
-        <a href="https://www.linkedin.com/in/ginobartolucci/" target="_blank">
-          <img alt="linkdin  Logo" src="../assets/logos/lin-logo.png" />
-        </a>
-        <a href="https://www.instagram.com/gino_bartolucci/" target="_blank">
-          <img alt="Instagram Logo" src="../assets/logos/ins-logo.png" />
-        </a>
-      </div>
-      <form-contact></form-contact>
-    </div>
+  <h1 class="titles">Contacto</h1>
+  <div id="social-media">
+    <a href="https://github.com/GinoBartolucci" target="_blank">
+      <img alt="github Logo" src="../assets/logos/hub-logo.png" />
+    </a>
+    <a href="https://www.linkedin.com/in/ginobartolucci/" target="_blank">
+      <img alt="linkdin  Logo" src="../assets/logos/lin-logo.png" />
+    </a>
+    <a href="https://www.instagram.com/gino_bartolucci/" target="_blank">
+      <img alt="Instagram Logo" src="../assets/logos/ins-logo.png" />
+    </a>
   </div>
+  <form-contact></form-contact>
 </template>
 
 <script>
@@ -54,21 +50,16 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@200;300&display=swap");
-
-#main-social-media {
-  background-color: #f4f4f4;
-  padding: 5vh 1rem;
-}
+ 
 #social-media {
   margin: 0 0 1rem 0;
   display: flex;
-  flex-flow: row nowrap; 
+  flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
 }
 #social-media a {
-  margin: 0 15px ;
+  margin: 0 15px;
 }
 #social-media img {
   max-width: 40px;
@@ -77,7 +68,7 @@ export default {
   max-width: 200px;
   object-fit: contain;
 }
-#social-media img:hover{
+#social-media img:hover {
   padding: 0.5rem;
   max-width: 200px;
   object-fit: contain;

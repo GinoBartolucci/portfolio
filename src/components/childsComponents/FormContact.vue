@@ -1,6 +1,5 @@
 <template>
   <form @submit.prevent="sendEmail">
-    <div id="form-body">
       <div class="input-group">
         <label>Nombre:</label>
         <input
@@ -45,7 +44,6 @@
       <div class="input-group">
         <button type="submit" value="Send">Enviar</button>
       </div>
-    </div>
   </form>
 </template>
 
@@ -134,68 +132,63 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@200;300&display=swap");
-
+ 
 form {
-  margin: 0;
+  margin: auto;
+  font-size: 1.6rem;
+  text-align: left;
   padding: 0;
-}
-#form-body {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
-  margin: auto;
 }
 .input-group {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
+  font-size: inherit;
 }
 label {
   margin: 0 0 0 1rem;
-  text-align: left;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   padding: 0 0 0 1rem;
-  color: #1b1b1b;
-  font-size: 1.5rem;
   flex-basis: 15%;
 }
 input,
-textarea {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  background-color: #ffffff;
-  font-size: 1.5rem;
+textarea, button {
   padding: 1rem;
   margin: 1rem 1.5rem;
-  border: 1px solid #525252;
-  border-radius: 0.3rem;
+  font-size: inherit;
+  background-color: #ffffff;
+  border: 1px solid var(--dark-2-color);
+  border-radius: 5px;
   flex: auto;
   resize: vertical;
   outline: none;
+  font-family:inherit;
 }
 input:focus,
 textarea:focus,
 button:hover {
   outline: none;
-  -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.59);
-  -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.59);
-  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.59);
+  box-shadow: 0px 0px 3px 1px var(--dark-color);
 }
-button {
-  background-color: #ffffff;
-  color: #1b1b1b;
-  font-size: calc(1rem + 1vw);
-  padding: 1rem;
-  margin: 1.5rem;
-  border: 1px solid #1b1b1b;
-  border-radius: 0.3rem;
-  flex: auto;
+.dark-mode input,
+.dark-mode textarea, 
+.dark-mode button{
+  background-color: var(--dark-2-color);
+  color: var(--light-2-color);
+}
+.dark-mode input:focus,
+.dark-mode textarea:focus,
+.dark-mode button:hover {
   outline: none;
+  box-shadow: 0px 0px 3px 1px var(--light-color);
 }
-
-.inputError, .inputError:focus {
-  border: 1px solid #f15e5e;
+.inputError {
+  border: 1px solid var(--error-color) !important;
+}
+.inputError:focus{
+  box-shadow: 0px 0px 3px 1px var(--error-color) !important;
 }
 @media (max-width: 850px) {
   .input-group {
@@ -207,4 +200,5 @@ button {
     text-align: left;    
   }
 }
+
 </style>

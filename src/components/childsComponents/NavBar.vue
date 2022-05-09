@@ -16,7 +16,7 @@ html {
   font-size: 16px;
 }
 #main-header {
-  background-color: #1b1b1b;
+  background-color: var(--light-bg-color);
   padding: 32px 10px;
   min-height: 100vh;
   display: flex;

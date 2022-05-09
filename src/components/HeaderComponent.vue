@@ -2,7 +2,7 @@
   <div id="main-header">
     <div id="nombrePrecentacion">
       <h1 id="header-title">Gino Bartolucci</h1>
-      <p id="header-text">Full Stack Developer</p>
+      <h2 id="header-text">Full Stack Developer</h2>
     </div>
     <div id="downIcon">
       <img alt="down icon" src="../assets/logos/arr-logo.png" />
@@ -46,13 +46,10 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:wght@200;300&display=swap");
+ 
 
-html {
-  font-size: 16px;
-}
 #main-header {
-  background-color: #1b1b1b;
+  background-color: #131313;
   padding: 0 10px 0 10px;
   min-height: 100vh;
   display: flex;
@@ -60,19 +57,17 @@ html {
   justify-content: center;
   align-items: center;
 }
-#nombrePrecentacion {
-  text-align: center;
+#nombrePrecentacion{
+  color: var(--light-color);
 }
-#header-title {
-  color: #f4f4f4;
+#nombrePrecentacion h1 {
   font-size: calc(2rem + 3vw);
   font-weight: 800;
   letter-spacing: 2vw;
   margin: 0 0 1rem 0;
   font-family: "Bebas Neue", sans-serif;
 }
-#header-text {
-  color: #f4f4f4;
+#nombrePrecentacion h2 {
   font-size: calc(1rem + 2vw);
   font-weight: 400;
   letter-spacing: 1.1vw;
@@ -81,16 +76,13 @@ html {
 }
 #downIcon {
   position: absolute;
-  width: 100px;
-  height: 100px;
   padding: 0.5rem;
+  margin-bottom: 2rem;
   bottom: 0;
-
 }
 #downIcon img {
   width: 25px;
   height: 25px;
-  object-fit: contain;
 }
 @media (min-width: 2445px) {
   #header-text,

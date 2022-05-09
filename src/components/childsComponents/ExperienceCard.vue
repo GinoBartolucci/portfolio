@@ -54,85 +54,86 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;800&display=swap");
-
 .card {
   margin: 1rem;  
-  background-color: #f4f4f4;
-  color: #1b1b1b;  
+  background-color: var(--light-3-color);
+  color: var(--dark-color);  
   max-width: 350px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  align-items: center;
-  border: 1px solid #1b1b1b;  
-  border-radius: 3px;  
-  -webkit-box-shadow: 10px 10px 9px -7px rgba(0, 0, 0, 0.59);
-  -moz-box-shadow: 10px 10px 9px -7px rgba(0, 0, 0, 0.59);
-  box-shadow: 10px 10px 9px -7px rgba(0, 0, 0, 0.59);
-}
-.card-image {
+  border: 1px transparent var(--dark-color);  
+  border-radius: 3px;
+  box-shadow: 10px 10px 9px -7px var(--dark-2-color);
 }
 .card-image img {
   width: 100%;
   object-fit: contain;
-  border-bottom: 1px solid #1b1b1b;
+  border-bottom: 1px transparent var(--dark-color);
 }
-.card-title {
-  font-size: 1.5rem;
-  padding: 0.1rem;
-}
-.card-title h2 {
+.card-title h2{
   margin: 0.5rem 0;
-  font-weight: 500;
-  font-family: "Fira Sans", sans-serif;
+  padding: 0.1rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
 .card-text {
   text-align: center;
   padding: 0.5rem;
-  font-weight: 300;
   font-size: 1.2rem;
-  font-family: "Fira Sans", sans-serif;
   justify-self: center;
 }
-.card-text p{
-  margin: auto;
-}
 .card-button {
-  box-sizing: border-box;
-  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   align-content: center;
-  justify-content: space-around;
   padding: 0.5rem;
 }
 .card-button button {
-  background-color: #1b1b1b;
-  color: #f4f4f4;
+  background-color: var(--dark-color);
+  color: var(--light-color);
   flex-basis: 50%;
   padding: 0.5rem;
   margin: 0.5rem;
   font-size: 1rem;
   font-weight: 400;
-  font-family: "Fira Sans", sans-serif;
   border-radius: 5px;
-  border: 1px solid #1b1b1b;
-  -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.59);
-  -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.59);
-  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.59);
+  border: 1px solid var(--dark-color);
+  box-shadow: 0px 0px 3px 1px var(--dark-color);
 }
 .card-button button i{
-  float: right;
   margin-right: 5px;
-  font-size: inherit;
-  
+  font-size: inherit;  
 }
 .card-button button:hover {
-  background-color: #525252;  
+  background-color: var(--dark-2-color);  
 }
 .buttonDisabled{
-  background-color: #525252 !important;
+  background-color: var(--dark-2-color) !important;
+  pointer-events: none;    
+}
+.dark-mode .card{
+  margin: 1rem;  
+  background-color: var(--dark-3-color);
+  color: var(--light-2-color);  
+  border: 1px transparent var(--light-2-color);  
+}
+.dark-mode .card-button button {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  border: 1px solid var(--light-color);
+  box-shadow: 0px 0px 1px 1px var(--light-color);
+}
+.dark-mode .card-button button i{
+  color: var(--dark-color);
+}
+.dark-mode .card-button button:hover {
+  background-color: var(--light-2-color);  
+  border: 1px solid var(--light-2-color);
+}
+.dark-mode .buttonDisabled{
+  background-color: var(--light-2-color) !important;
+  border: 1px solid var(--light-2-color) !important;
   pointer-events: none;    
 }
 </style>
