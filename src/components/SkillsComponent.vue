@@ -1,16 +1,6 @@
 <template>
   <div>
-    <h1 class="titles">My Skills</h1>
-  </div>
-  <div class="card-container-skills">
-    <div>
-      <img alt="español Logo" src="../assets/logos/arg-logo.png" />
-      <p>Español</p>
-    </div>
-    <div>
-      <img alt="english Logo" src="../assets/logos/eng-logo.png" />
-      <p>English</p>
-    </div>
+    <h1 class="titles">{{ title }}</h1>
   </div>
   <div class="card-container-skills">
     <div>
@@ -58,6 +48,16 @@
       <p>.Net Framework</p>
     </div>
   </div>
+  <div class="card-container-skills">
+    <div>
+      <img alt="español Logo" src="../assets/logos/arg-logo.png" />
+      <p>Español</p>
+    </div>
+    <div>
+      <img alt="english Logo" src="../assets/logos/eng-logo.png" />
+      <p>English</p>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -65,9 +65,10 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default {
+  inject: ["language"],
   mounted() {
+    this.defineLanguage(this.idioma);
     gsap.registerPlugin(ScrollTrigger);
-
     gsap.utils.toArray(".card-container-skills div").forEach((cardE) => {
       gsap.from(cardE, {
         scrollTrigger: {
@@ -76,18 +77,40 @@ export default {
           toggleActions: "play none none none",
         },
         scale: 0.9,
-        duration: 0.7,
+        duration: 0.6,
         opacity: 0,
       });
     });
   },
-  setup() {},
+  data() {
+    return {
+      title: "",
+      idioma: this.language,
+    };
+  },
+  watch: {
+    idioma(newValue) {
+      this.defineLanguage(newValue);
+    },
+  },
+  methods: {
+    defineLanguage(lang) {
+      if (lang == "es") {
+        this.title = "Competencias";
+      }
+      if (lang == "en") {
+        this.title = "Skils";
+      }
+    },
+  },
 };
 </script>
 
 <style scoped>
 .card-container-skills {
   display: flex;
+  max-width: 1000px;
+  margin: auto;
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: center;
@@ -95,20 +118,21 @@ export default {
 }
 .card-container-skills div {
   padding: 1rem;
-  margin: 2rem 5%;
-  max-height: 150px;
-  max-width: 150px;
+  margin: 2rem 3%;
+  max-height: 130px;
+  max-width: 130px;
 }
 .card-container-skills div img {
-  max-width: 150px;
-  max-height: 150px;
+  max-width: 130px;
+  max-height: 130px;
   object-fit: contain;
 }
 .card-container-skills div p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: auto;
   font-weight: 400;
   text-align: center;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.3rem;
+  word-wrap: break-word;
 }
 </style>

@@ -1,5 +1,6 @@
 <template>
-  <h1 class="titles">Contacto</h1>
+  <h1 class="titles">{{ title }}</h1>
+  <form-contact></form-contact>
   <div id="social-media">
     <a href="https://github.com/GinoBartolucci" target="_blank">
       <img alt="github Logo" src="../assets/logos/hub-logo.png" />
@@ -11,7 +12,6 @@
       <img alt="Instagram Logo" src="../assets/logos/ins-logo.png" />
     </a>
   </div>
-  <form-contact></form-contact>
 </template>
 
 <script>
@@ -21,6 +21,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import FormContact from "./childsComponents/FormContact.vue";
 
 export default {
+  inject: ["language"],
   components: {
     FormContact,
   },
@@ -29,15 +30,22 @@ export default {
       message: null,
       email: null,
       errors: [],
+      title: "",
+      idioma: this.language
     };
   },
+  watch: {
+    idioma(newValue) {
+      this.defineLanguage(newValue);
+    },
+  },
   mounted() {
+    this.defineLanguage(this.idioma);
     gsap.registerPlugin(ScrollTrigger);
-
     gsap.from("#social-media", {
       scrollTrigger: {
         trigger: "#social-media",
-        start: "0 90%",
+        start: "-100 100%",
         toggleActions: "play none none none",
       },
       y: 50,
@@ -45,12 +53,20 @@ export default {
       opacity: 0,
     });
   },
-  methods: {},
+  methods: {
+    defineLanguage(lang) {
+      if (lang == "es") {
+        this.title = "Contacto";
+      }
+      if (lang == "en") {
+        this.title = "Contact";
+      }
+    },
+  },
 };
 </script>
 
 <style scoped>
- 
 #social-media {
   margin: 0 0 1rem 0;
   display: flex;

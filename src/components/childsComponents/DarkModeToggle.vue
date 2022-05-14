@@ -46,17 +46,15 @@ export default {
 
 <style>
 .mode-toggle {
-  position: sticky;
-top: 10px;
-box-sizing:border-box;
-margin-left: calc(100% - 44px);
+  position: relative;
+  margin:  0.25rem;
   padding: 0;
-  width: 44px;
-  height: 24px;
+  width: 48px;
+  height: 32px;
   min-width: 36px;
   min-height: 20px;
   background-color: #262626;
-  border: 0;
+  border: 1px solid var(--light-color);
   border-radius: 24px;
   outline: 0;
   overflow: hidden;
@@ -73,8 +71,8 @@ margin-left: calc(100% - 44px);
   left: 0;
   bottom: 0;
   margin: auto;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
   border: 3px solid transparent;
   box-shadow: inset 0 0 0 2px #a5abba;

@@ -4,31 +4,22 @@
     <div id="profile-image">
       <img alt="profile-image" src="../assets/imgs/profile.jpg" />
     </div>
-    <div id="about-text">
-      <p>
-        Mi nombre es Gino Bartolucci, vivo en argentina. Estoy estudiando
-        Ingeniería en Sistemas, aunque también soy autodidacta. Siempre estoy
-        conociendo tecnologías nuevas o estudiando las que ya se para mejorar.
-        Me gusta todo lo relacionado a sistemas, pero lo que más me gusta es
-        Experiencia de Usuario y Diseño de Sistemas.
-      </p>
-      <p>
-        En este momento estoy aprendiendo freamworks frontend. En el futuro me
-        gustaría ver Solidity, GO, Django y WebAssembly.
-      </p>
-    </div>
+    <div class="about-text" v-html="textAbout"></div>
   </div>
 </template>
 
 <script>
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import jsonData from "../assets/data.json";
 
 export default {
+  inject: ["language"],
   mounted() {
+    this.defineLanguage(this.idioma);
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.utils.toArray("#about-text p").forEach((cardE) => {
+    gsap.utils.toArray(".about-text").forEach((cardE) => {
       gsap.from(cardE, {
         scrollTrigger: {
           trigger: cardE,
@@ -51,10 +42,42 @@ export default {
       opacity: 0,
     });
   },
-  setup() {},
+  data() {
+    return {
+      textAbout: "",
+      idioma: this.language,
+    };
+  },
+  watch: {
+    idioma(newValue) {
+      this.defineLanguage(newValue);
+    },
+  },
+  methods: {
+    defineLanguage(lang) {
+      if (lang == "es") {
+        this.textAbout = jsonData["about-text"]["español"];
+      }
+      if (lang == "en") {
+        this.textAbout = jsonData["about-text"]["english"];
+      }
+    },
+  },
 };
 </script>
-
+<style>
+.about-text {
+  max-width: 800px;
+  font-size: calc(1.3rem + 0.3vw);
+  text-align: center;
+  padding: 0 0.5rem 0 0.5rem;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.about-text p {
+  padding: 1rem 0.5rem;
+}
+</style>
 <style scoped>
 #about-container {
   display: flex;
@@ -69,16 +92,4 @@ export default {
   max-height: 250px;
   border-radius: 50%;
 }
-#about-text {
-  max-width: 800px;
-  font-size: calc(1.3rem + 0.3vw);
-  text-align: center;
-  padding: 0 0.5rem 0 0.5rem;
-  display: flex;
-  flex-flow: column nowrap;
-}
-#about-text p {
-  padding: 1rem 0.5rem;
-}
-
 </style>

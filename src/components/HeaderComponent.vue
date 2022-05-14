@@ -49,9 +49,9 @@ export default {
  
 
 #main-header {
-  background-color: #131313;
+  background-color: var(--dark-3-color);
   padding: 0 10px 0 10px;
-  min-height: 100vh;
+  min-height: calc(100vh - 64px);
   display: flex;
   flex-flow: column;
   justify-content: center;

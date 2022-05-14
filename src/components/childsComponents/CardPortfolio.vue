@@ -7,17 +7,17 @@
       />
     </div>
     <div class="card-title">
-      <h2>{{cardTitle}}</h2>
+      <h2>{{DataCard['title']}}</h2>
     </div>
     <div class="card-text">
-      <p v-html="cardText"></p>
+      <p v-html="DataCard[description]"></p>
     </div>
     <div class="card-button">
-      <button @click="git" :class="{buttonDisabled: gitdisabled}" :disabled="gitdisabled">
+      <button @click="git" :class="{buttonDisabled: DataCard['gitdisabled']}" :disabled="DataCard['gitdisabled']">
         GitHub
         <i class="pi pi-github"></i>
       </button>
-      <button @click="deploy" :class="{buttonDisabled: deploydisabled}" :disabled="deploydisabled" >
+      <button @click="deploy" :class="{buttonDisabled: DataCard['deploydisabled']}" :disabled="DataCard['deploydisabled']" >
         Demo
         <i class="pi pi-external-link"></i>
       </button>
@@ -27,27 +27,41 @@
 
 <script>
 export default {
+  inject: ["language"],
   props:{
-    cardImage: String,
-    cardText: String,
-    cardTitle:String,
-    gitLink: String,
-    deployLink:String,
-    gitdisabled: Boolean,
-    deploydisabled: Boolean,
+    DataCard: Object,
+  },
+  mounted(){
+    this.defineLanguage(this.idioma);
   },
   data (){
     return{
-      
+      idioma: this.language,
+      description:''
     };
   },
-  setup() {},
+  watch: {
+    idioma(newValue) {
+      this.defineLanguage(newValue);
+    },
+  },
   methods: {
     git: function(){
-      window.open(this.gitLink, '_blank');
+      window.open(this.DataCard['gitLink'], '_blank');
     },
     deploy: function(){
-      window.open(this.deployLink, '_blank');
+      window.open(this.DataCard['deployLink'], '_blank');
+    },
+    defineLanguage(lang) {
+      console.log(this.description)
+      if (lang == "es") {
+        this.description = "español";
+        console.log(this.description)
+      }
+      if (lang == "en") {
+        this.description = "english";
+        console.log(this.description)
+      }
     }
   }
 };
@@ -58,7 +72,7 @@ export default {
   margin: 1rem;  
   background-color: var(--light-3-color);
   color: var(--dark-color);  
-  max-width: 350px;
+  max-width: 300px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -74,7 +88,7 @@ export default {
 .card-title h2{
   margin: 0.5rem 0;
   padding: 0.1rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 .card-text {

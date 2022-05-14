@@ -1,0 +1,65 @@
+{
+  "about-title": {
+    "español": "About",
+    "english": "About"
+  },
+  "about-text": {
+    "español": "<p>Mi nombre es Gino Bartolucci, vivo en Argentina. Estoy estudiando Ingeniería en Sistemas, aunque también soy autodidacta. Siempre estoy conociendo tecnologías nuevas o mejorando en las que ya conozco. Lo que más me gusta de sistemas es la Experiencia de Usuario y el Diseño de Sistemas.</p> <p>En este momento estoy aprendiendo freamworks frontend. En el futuro me gustaría ver Solidity, GO, Django y WebAssembly.</p>",
+    "english": "<p>Hi my name is Gino Bartolucci, Im living in Argentina and study System Engineering, although I am also self-taught. Always looking for new technologies to learn or getting better in the ones i alrrady know. The most i like is the User Experience and the Systems Design.</p> <p>In this moment i am lerning frontend freameworks. In the future i wold like to learn Dolidity, Go, Django and WebAsembly.</p>"
+  },
+  "skils-title": {
+    "español": "My Skils",
+    "english": "My Skils"
+  },
+  "projects-title": {
+    "español": "Mis Proyectos",
+    "english": "My Projects"
+  },
+  "projects-cards": [
+    {
+      "id":0,
+      "title": "Academia",
+      "image": "",
+      "deploydisabled": true,
+      "deployLink": "",
+      "gitdisabled": false,
+      "gitLink": "https://github.com/GinoBartolucci/Net-TP2-Grupo1",
+      "español": "Proyecto académico. Se debía crear un sistema para gestionar Alumnos y Profesores en el ámbito académico. La Solución consta de una <b>aplicación de escritorio</b> y una <b>aplicación web</b>. Utilicé <b>.net</b> para las aplicaciones y <b>SQLServer</b> para la base de datos.",
+      "english": "Academic project. A system had to be created to manage Students and Professors in the academic field. The Solution consists of a <b>desktop app</b> and a <b>web app</b> I used <b>.net</b> for the apps and <b>SQLServer</b> for the database."
+    }
+  ],
+  "contact-title": {
+    "español": "Contacto",
+    "english": "Contact"
+  },
+  "contact-form": {
+    "labels": {
+      "español": {
+        "name": "Nombre",
+        "subjet": "Asunto",
+        "email": "Email",
+        "messaje": "Mensaje"
+      },
+      "english": {
+        "name": "Name",
+        "subjet": "Subjet",
+        "email": "Email",
+        "messaje": "Mensaje"
+      }
+    },
+    "inputs": {
+      "español": {
+        "name": "Gino, de Google...",
+        "subjet": "Oferta...",
+        "email": "email@email.com",
+        "messaje": "Mensaje..."
+      },
+      "english": {
+        "name": "Gino, from Google...",
+        "subjet": "Offer...",
+        "email": "email@email.com",
+        "messaje": "Mensaje..."
+      }
+    }
+  }
+}
