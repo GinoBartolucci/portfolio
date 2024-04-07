@@ -3,7 +3,7 @@
   <div class="toggles">
     <div>
       <DarkModeToggle @GetDarkMode="SetDarkMode"></DarkModeToggle>
-      <LanguageToggle @GetLanguageMode="SetLanguageMode"></LanguageToggle>
+      <!-- <LanguageToggle @GetLanguageMode="SetLanguageMode"></LanguageToggle> -->
     </div>
   </div>
   <div :class="{ 'dark-mode': cssMode }" class="main">
@@ -25,7 +25,7 @@ import SocialMedia from "./components/ContactComponent.vue";
 import SkillsComponent from "./components/SkillsComponent.vue";
 import HeaderComponent from "./components/HeaderComponent.vue";
 import DarkModeToggle from "./components/childsComponents/DarkModeToggle.vue";
-import LanguageToggle from "./components/childsComponents/LanguageToggle.vue";
+// import LanguageToggle from "./components/childsComponents/LanguageToggle.vue";
 import { gsap } from "gsap";
 import { computed } from "vue";
 export default {
@@ -36,7 +36,7 @@ export default {
     SkillsComponent,
     HeaderComponent,
     DarkModeToggle,
-    LanguageToggle,
+    // LanguageToggle,
   },
   mounted() {
     document.title = "Gino Bartolucci";
@@ -90,8 +90,8 @@ html {
   --light-2-color: #b1b1b1;
   --light-3-color: #f0f0f0;
 
-  --error-color: #f15e5e;
-  --correct-color: #71e662;
+  --error-color: #fd603f ;
+  --correct-color: #59ca39 ;
 }
 body {
   margin: 0;

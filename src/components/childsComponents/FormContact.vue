@@ -42,17 +42,17 @@
       </textarea>
     </div>
     <div class="input-group">
-      <button type="submit" value="Send">{{ labels.send }}</button>
-      
+      <button type="submit" value="Send">
+       {{contacted == true? "Enviado" : labels.send }}</button>      
     </div>
-<p id="alert" :class="{'alertError': error, 'alertContacted':contacted}">{{alert}}</p>
+<!-- <p id="alert" :class="{'alertError': error, 'alertContacted':contacted}">{{alert}}</p> -->
   </form>
 </template>
 
 <script>
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import emailjs from "emailjs-com";
+import emailjs from '@emailjs/browser';
 
 export default {
   inject: ["language"],
@@ -109,7 +109,7 @@ export default {
     },
   },
   methods: {
-    sendEmail(e) {
+    sendEmail() {
       if (this.name.trim().replace(/(\r\n|\n|\r)/gm, "") !== "") {
         this.errors.wrongName = false;
       }
@@ -139,21 +139,20 @@ export default {
         this.email.trim().replace(/(\r\n|\n|\r)/gm, "") !== "" &&
         this.message.trim().replace(/(\r\n|\n|\r)/gm, "") !== "" &&
         this.subjet.trim().replace(/(\r\n|\n|\r)/gm, "") !== ""
-      ) {
-        
+      ) {      
         emailjs
-          .sendForm(
-            "service_rpqnlf4",
-            "template_06euihp",
-            e.target,
-            "7rbPhdBu71nb8XZWr"
-          )
-          .then((result) => {
-            console.log(result.text);
-          })
-          .catch((error) => {
-            console.log(error);
-          });        
+        .send('service_dk9ad9a', 'template_ann7z8e', 
+        {"name": this.name,"email": this.email,"message": this.message,"subjet": this.subjet}, {
+          publicKey: '7rbPhdBu71nb8XZWr',
+        })
+        .then(
+          (response) => {
+            console.log('SUCCESS!', response.status, response.text);
+          },
+          (err) => {
+            console.log('FAILED...', err);
+          },
+        );               
         this.name = "";
         this.email = "";
         this.message = "";
@@ -188,8 +187,8 @@ export default {
           send: "Enviar",
         };
         this.placeholders = {
-          name: "Gino, de Google",
-          subjet: "Oferta...",
+          name: "Gino, UTN Rosario",
+          subjet: "Asunto...",
           email: "email@email.com",
           message: "Mensaje...",
         };
@@ -203,8 +202,8 @@ export default {
           send: "Send",
         }
         this.placeholders = {
-          name: "Gino, from Google",
-          subjet: "Offert...",
+          name: "Gino, UTN Rosario",
+          subjet: "Subjet...",
           email: "email@email.com",
           message: "Message...",
         };
@@ -298,7 +297,7 @@ textarea{
   color: var(--error-color)
 }
 .alertContacted{
-    color: var(--correct-color)
+  color: var(--correct-color)
 
 }
 </style>

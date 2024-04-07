@@ -2,10 +2,10 @@
   <div class="card">
     <div class="card-image">
       <img
-        src="@/assets/cards/academia-card.jpg"
+        :src="getImgUrl(this.DataCard['image'])"
         alt="Placeholder image"
       />
-    </div>
+    </div> 
     <div class="card-title">
       <h2>{{DataCard['title']}}</h2>
     </div>
@@ -18,7 +18,7 @@
         <i class="pi pi-github"></i>
       </button>
       <button @click="deploy" :class="{buttonDisabled: DataCard['deploydisabled']}" :disabled="DataCard['deploydisabled']" >
-        Demo
+        {{DataCard["id"] == 3 ? "Paper" : "Demo"}}
         <i class="pi pi-external-link"></i>
       </button>
     </div>
@@ -51,6 +51,9 @@ export default {
     },
     deploy: function(){
       window.open(this.DataCard['deployLink'], '_blank');
+    },
+    getImgUrl: function(p){
+      return require('@/assets/cards/' + p );
     },
     defineLanguage(lang) {
       console.log(this.description)

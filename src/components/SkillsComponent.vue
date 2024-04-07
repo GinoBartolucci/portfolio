@@ -4,52 +4,6 @@
   </div>
   <div class="card-container-skills">
     <div>
-      <img alt="Node.js Logo" src="../assets/logos/node-logo.png" />
-      <p>Node</p>
-    </div>
-    <div>
-      <img alt="mysql Logo" src="../assets/logos/mql-logo.png" />
-      <p>SQL</p>
-    </div>
-    <div>
-      <img alt="express Logo" src="../assets/logos/exp-logo.png" />
-      <p>Express</p>
-    </div>
-    <div>
-      <img alt="css Logo" src="../assets/logos/css-logo.png" />
-      <p>CSS</p>
-    </div>
-    <div>
-      <img alt="html Logo" src="../assets/logos/html-logo.png" />
-      <p>HTML</p>
-    </div>
-    <div>
-      <img alt="java script Logo" src="../assets/logos/javascript-logo.png" />
-      <p>Java Script</p>
-    </div>
-    <div>
-      <img alt="csharp Logo" src="../assets/logos/csharp-logo.png" />
-      <p>C#</p>
-    </div>
-    <div>
-      <img alt="Python Logo" src="../assets/logos/pyt-logo.png" />
-      <p>Python</p>
-    </div>
-    <div>
-      <img alt="git Logo" src="../assets/logos/git-logo.png" />
-      <p>Git</p>
-    </div>
-    <div>
-      <img alt="vue Logo" src="../assets/logos/vue-logo.png" />
-      <p>Vue</p>
-    </div>
-    <div>
-      <img alt="Net Framework Logo" src="../assets/logos/net-logo.png" />
-      <p>.Net Framework</p>
-    </div>
-  </div>
-  <div class="card-container-skills">
-    <div>
       <img alt="español Logo" src="../assets/logos/arg-logo.png" />
       <p>Español</p>
     </div>
@@ -58,14 +12,27 @@
       <p>English</p>
     </div>
   </div>
+  <div class="card-container-skills">
+  <skils-logo
+      v-for="logo in logos"
+      :key="logo.nombre"
+      :nombre = "logo.nombre"
+      :imagen = "logo.logo"
+    >
+    </skils-logo>
+  </div>  
 </template>
 
 <script>
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import SkilsLogo from "./childsComponents/SkilsLogo.vue";
+import dataSkils from "../assets/data.json";
+
 
 export default {
-  inject: ["language"],
+  inject: ["language"],  
+  components: { SkilsLogo },
   mounted() {
     this.defineLanguage(this.idioma);
     gsap.registerPlugin(ScrollTrigger);
@@ -86,6 +53,7 @@ export default {
     return {
       title: "",
       idioma: this.language,
+      logos: dataSkils["skils"],
     };
   },
   watch: {
