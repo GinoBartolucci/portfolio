@@ -130,4 +130,8 @@
       "english": "<b>Web Application:</b> Ticket sales for shows managed by a production company, purchasable by registered users. When a user attends the event, the production company scans the QR code on the ticket to invalidate it. I used <b>Java Servlets</b> for the backend, <b>HTML, CSS, JS, JSP</b> for the frontend, and <b>MySQL</b> as the database. The project was deployed using <b>Tomcat</b>."
     }
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 0d2413358967a0da0113a1c980384f249b8a7fa2
