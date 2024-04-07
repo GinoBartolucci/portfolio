@@ -1,133 +1,133 @@
 {
-  "titulos": {
-    "about": {
-      "title": {
-        "español": "About",
-        "english": "About"
+  "titulos":{
+    "about":{
+      "title":{
+        "español":"About",
+        "english":"About"
       },
-      "text": {
-        "español": "<p>Mi nombre es Gino Bartolucci, vivo en Argentina. Estoy estudiando Ingeniería en Sistemas, aunque también soy autodidacta. Siempre estoy conociendo tecnologías nuevas o mejorando en las que ya conozco. </p>",
-        "english": "<p>Hi my name is Gino Bartolucci, Im living in Argentina and study System Engineering, i am also self-taught. Always looking for new technologies to learn or getting better in the ones i alrrady know.</p>"
+      "text":{
+        "español":"<p>Mi nombre es Gino Bartolucci, vivo en Argentina. Estoy estudiando Ingeniería en Sistemas, aunque también soy autodidacta. Siempre estoy conociendo tecnologías nuevas o mejorando en las que ya conozco. </p>",
+        "english":"<p>Hi my name is Gino Bartolucci, Im living in Argentina and study System Engineering, i am also self-taught. Always looking for new technologies to learn or getting better in the ones i alrrady know.</p>"
       }
     },
-    "skils": {
-      "español": "My Skils",
-      "english": "My Skils"
+    "skils":{
+      "español":"My Skils",
+      "english":"My Skils"
     },
-    "proyectos": {
-      "español": "Mis Proyectos",
-      "english": "My Projects"
+    "proyectos":{
+      "español":"Mis Proyectos",
+      "english":"My Projects"
     }
   },
-  "skils": {
-    "Type_Script": {
-      "nombre": "Type Script",
-      "logo": "typescript-logo.png"
+  "skils":{
+    "Type_Script":{
+      "nombre":"Type Script",
+      "logo":"typescript-logo.png"
     },
-    "Node": {
-      "nombre": "Node",
-      "logo": "node-logo.png"
+    "Node":{
+      "nombre":"Node",
+      "logo":"node-logo.png"
     },
-    "Next": {
-      "nombre": "Next",
-      "logo": "next-logo.png"
+    "Next":{
+      "nombre":"Next",
+      "logo":"next-logo.png"
     },
-    "Vue": {
-      "nombre": "Vue",
-      "logo": "vue-logo.png"
+    "Vue":{
+      "nombre":"Vue",
+      "logo":"vue-logo.png"
     },
-    "React": {
-      "nombre": "React",
-      "logo": "react-logo.png"
+    "React":{
+      "nombre":"React",
+      "logo":"react-logo.png"
     },
-    "SQL": {
-      "nombre": "SQL",
-      "logo": "mql-logo.png"
+    "SQL":{
+      "nombre":"SQL",
+      "logo":"mql-logo.png"
     },
-    "Python": {
-      "nombre": "Python",
-      "logo": "pyt-logo.png"
+    "Python":{
+      "nombre":"Python",
+      "logo":"pyt-logo.png"
     },
-    "Java": {
-      "nombre": "Java",
-      "logo": "java-logo.png"
+    "Java":{
+      "nombre":"Java",
+      "logo":"java-logo.png"
     },
-    "C#": {
-      "nombre": "C#",
-      "logo": "csharp-logo.png"
+    "C#":{
+      "nombre":"C#",
+      "logo":"csharp-logo.png"
     },
-    ".Net Framework": {
-      "nombre": ".Net Framework",
-      "logo": "net-logo.png"
+    ".Net Framework":{
+      "nombre":".Net Framework",
+      "logo":"net-logo.png"
     },
-    "CSS": {
-      "nombre": "CSS",
-      "logo": "css-logo.png"
+    "CSS":{
+      "nombre":"CSS",
+      "logo":"css-logo.png"
     },
-    "HTML": {
-      "nombre": "HTML",
-      "logo": "html-logo.png"
+    "HTML":{
+      "nombre":"HTML",
+      "logo":"html-logo.png"
     },
-    "Git": {
-      "nombre": "Git",
-      "logo": "git-logo.png"
+    "Git":{
+      "nombre":"Git",
+      "logo":"git-logo.png"
     }
   },
-  "proyectos": {
-    "0": {
-      "id": 0,
-      "title": "Generador de Contraseñas",
-      "image": "contrasena.jpg",
-      "deploydisabled": false,
-      "deployLink": "https://ginobartolucci.github.io/generador-contrasenas/",
-      "gitdisabled": false,
-      "gitLink": "https://github.com/GinoBartolucci/generador-contrasenas",
-      "español": "Genera contraseñas utilizando las palabras (1000) mas comunes en español seleccionadas aleatoriamente, ademas de seguro es fácil de recordar. Un formulario permite<b> ajustar la seguridad de la contraseña</b> cambiando parámetros como la longitud y caracteres especiales. Utilice <b>Vue 3</b> con <b>Vite</b>.",
-      "english": "Generates passwords using the (1000) most common words in Spanish selected randomly, also securely easy to remember. A form allows <b>adjusting the password security</b> by changing parameters such as length and special characters. Use <b>Vue 3</b> with <b>Vite</b>."
+  "proyectos":{
+    "0":{
+      "id":0,
+      "title":"Generador de Contraseñas",
+      "image":"contrasena.jpg",
+      "deploydisabled":false,
+      "deployLink":"https://ginobartolucci.github.io/generador-contrasenas/",
+      "gitdisabled":false,
+      "gitLink":"https://github.com/GinoBartolucci/generador-contrasenas",
+      "español":"Genera contraseñas utilizando las palabras (1000) mas comunes en español seleccionadas aleatoriamente, ademas de seguro es fácil de recordar. Un formulario permite<b> ajustar la seguridad de la contraseña</b> cambiando parámetros como la longitud y caracteres especiales. Utilice <b>Vue 3</b> con <b>Vite</b>.",
+      "english":"Generates passwords using the (1000) most common words in Spanish selected randomly, also securely easy to remember. A form allows <b>adjusting the password security</b> by changing parameters such as length and special characters. Use <b>Vue 3</b> with <b>Vite</b>."
     },
-    "1": {
-      "id": 1,
-      "title": "Comunidades",
-      "image": "comunidades.jpg",
-      "deploydisabled": true,
-      "deployLink": "",
-      "gitdisabled": false,
-      "gitLink": "https://github.com/GinoBartolucci/TTADS-Backend",
-      "español": "Un sistema que pueda reunir personas con un mismo interés creando eventos dentro de comunidades. El <a href='https://github.com/GinoBartolucci/TTADS-Backend' target='_blank'><b>Backend</b></a> es una <b>RestApi</b> hecha con <b>Node.js, Mysql</b> con <b>Sequelize</b> y el <a href='https://github.com/GinoBartolucci/TTADS-Frontend' target='_blank'><b>Frontend</b></a> lo hice con <b>vue.js con NuxtJS y Vuetify</b>",
-      "english": " A system that can bring together people with the same interest by creating events within communities. The <a href='https://github.com/GinoBartolucci/TTADS-Backend' target='_blank'><b>Backend</b></a> is a <b>RestApi</b> made with <b>Node.js, Mysql</b> with <b>Sequelize</b>, and the <a href='https://github.com/GinoBartolucci/TTADS-Frontend' target='_blank'><b>Frontend</b></a> was done with <b>Vue.js with NuxtJS and Vuetify</b>."
+    "1":{
+      "id":1,
+      "title":"Comunidades",
+      "image":"comunidades.jpg",
+      "deploydisabled":true,
+      "deployLink":"",
+      "gitdisabled":false,
+      "gitLink":"https://github.com/GinoBartolucci/TTADS-Backend",
+      "español":"Un sistema que pueda reunir personas con un mismo interés creando eventos dentro de comunidades. El <a href='https://github.com/GinoBartolucci/TTADS-Backend' target='_blank'><b>Backend</b></a> es una <b>RestApi</b> hecha con <b>Node.js, Mysql</b> con <b>Sequelize</b> y el <a href='https://github.com/GinoBartolucci/TTADS-Frontend' target='_blank'><b>Frontend</b></a> lo hice con <b>vue.js con NuxtJS y Vuetify</b>",
+      "english":" A system that can bring together people with the same interest by creating events within communities. The <a href='https://github.com/GinoBartolucci/TTADS-Backend' target='_blank'><b>Backend</b></a> is a <b>RestApi</b> made with <b>Node.js, Mysql</b> with <b>Sequelize</b>, and the <a href='https://github.com/GinoBartolucci/TTADS-Frontend' target='_blank'><b>Frontend</b></a> was done with <b>Vue.js with NuxtJS and Vuetify</b>."
     },
-    "2": {
-      "id": 2,
-      "title": "¿Sueñan los Androides con romper paredes digitales?",
-      "image": "breakout.jpg",
-      "deploydisabled": false,
-      "deployLink": "./Paper.pdf",
-      "gitdisabled": false,
-      "gitLink": "https://github.com/GinoBartolucci/Neat_Breakout-ML_AG",
-      "español": "Aplicando <b>Algoritmos genéticos con Machine Learning</b> para entrenar una <b>red neuronal</b> que supere el desenpeño de un humano en el juego Breakout de Atari. Utilicé <b>Python</b> y <b>NEAT combinado con Algorimos Geneticos</b> para este proyecto de investigacion. El proyecto y el paper fue <a href='./Presentacion.pdf' target='_blank' ><b>presentado</b></a> en el <b>Conaiisi 2022</b>",
-      "english": "Applying <b>Genetic Algorithms with Machine Learning</b> to train a <b>neural network</b> that outperforms a human's performance in the Atari Breakout game. I used <b>Python</b> and <b>NEAT combined with Genetic Algorithms</b> for this research project. The project and the paper were <a href='./Presentacion.pdf' target='_blank' ><b>presented</b></a>presented at <b>Conaiisi 2022</b>"
+    "2":{
+      "id":2,
+      "title":"¿Sueñan los Androides con romper paredes digitales?",
+      "image":"breakout.jpg",
+      "deploydisabled":false,
+      "deployLink":"./Paper.pdf",
+      "gitdisabled":false,
+      "gitLink":"https://github.com/GinoBartolucci/Neat_Breakout-ML_AG",
+      "español":"Aplicando <b>Algoritmos genéticos con Machine Learning</b> para entrenar una <b>red neuronal</b> que supere el desenpeño de un humano en el juego Breakout de Atari. Utilicé <b>Python</b> y <b>NEAT combinado con Algorimos Geneticos</b> para este proyecto de investigacion. El proyecto y el paper fue <a href='./Presentacion.pdf' target='_blank' ><b>presentado</b></a> en el <b>Conaiisi 2022</b>",
+      "english":"Applying <b>Genetic Algorithms with Machine Learning</b> to train a <b>neural network</b> that outperforms a human's performance in the Atari Breakout game. I used <b>Python</b> and <b>NEAT combined with Genetic Algorithms</b> for this research project. The project and the paper were <a href='./Presentacion.pdf' target='_blank' ><b>presented</b></a>presented at <b>Conaiisi 2022</b>"
     },
-    "3": {
-      "id": 3,
-      "title": "Academia",
-      "image": "academia-card.jpg",
-      "deploydisabled": true,
-      "deployLink": "",
-      "gitdisabled": false,
-      "gitLink": "https://github.com/GinoBartolucci/Net-TP2-Grupo1",
-      "español": "Proyecto académico. Se debía crear un sistema para gestionar Alumnos y Profesores en el ámbito académico. La Solución consta de una <b>aplicación de escritorio</b> y una <b>aplicación web</b>. Utilicé <b>.net</b> para las aplicaciones y <b>SQLServer</b> para la base de datos.",
-      "english": "Academic project. A system had to be created to manage Students and Professors in the academic field. The Solution consists of a <b>desktop app</b> and a <b>web app</b> I used <b>.net</b> for the apps and <b>SQLServer</b> for the database."
+    "3":{
+      "id":3,
+      "title":"Academia",
+      "image":"academia-card.jpg",
+      "deploydisabled":true,
+      "deployLink":"",
+      "gitdisabled":false,
+      "gitLink":"https://github.com/GinoBartolucci/Net-TP2-Grupo1",
+      "español":"Proyecto académico. Se debía crear un sistema para gestionar Alumnos y Profesores en el ámbito académico. La Solución consta de una <b>aplicación de escritorio</b> y una <b>aplicación web</b>. Utilicé <b>.net</b> para las aplicaciones y <b>SQLServer</b> para la base de datos.",
+      "english":"Academic project. A system had to be created to manage Students and Professors in the academic field. The Solution consists of a <b>desktop app</b> and a <b>web app</b> I used <b>.net</b> for the apps and <b>SQLServer</b> for the database."
     },
-    "4": {
-      "id": 4,
-      "title": "Acceso Libre",
-      "image": "java_acceso_libre.jpg",
-      "deploydisabled": true,
-      "deployLink": "",
-      "gitdisabled": false,
-      "gitLink": "https://github.com/GinoBartolucci/JAVA-acceso_libre",
-      "español": "<b>Aplicacion web:</b> Venta de entradas para shows administrados por una productora, pueden ser comprado por usuarios registrados. Cuando un usuario se presenta al evento la productora escanea el QR de la entrada invalidandola. Utilize <b>Java Servelts</b> para el backend, <b>HTML, CSS, JS, JSP</b> para el frontend y <b>MySQL</b> en la base de datos. El proyecto fue desplegado con <b>Tomcat</b>.",
-      "english": "<b>Web Application:</b> Ticket sales for shows managed by a production company, purchasable by registered users. When a user attends the event, the production company scans the QR code on the ticket to invalidate it. I used <b>Java Servlets</b> for the backend, <b>HTML, CSS, JS, JSP</b> for the frontend, and <b>MySQL</b> as the database. The project was deployed using <b>Tomcat</b>."
+    "4":{
+      "id":4,
+      "title":"Acceso Libre",
+      "image":"java_acceso_libre.jpg",
+      "deploydisabled":true,
+      "deployLink":"",
+      "gitdisabled":false,
+      "gitLink":"https://github.com/GinoBartolucci/JAVA-acceso_libre",
+      "español":"<b>Aplicacion web:</b> Venta de entradas para shows administrados por una productora, pueden ser comprado por usuarios registrados. Cuando un usuario se presenta al evento la productora escanea el QR de la entrada invalidandola. Utilize <b>Java Servelts</b> para el backend, <b>HTML, CSS, JS, JSP</b> para el frontend y <b>MySQL</b> en la base de datos. El proyecto fue desplegado con <b>Tomcat</b>.",
+      "english":"<b>Web Application:</b> Ticket sales for shows managed by a production company, purchasable by registered users. When a user attends the event, the production company scans the QR code on the ticket to invalidate it. I used <b>Java Servlets</b> for the backend, <b>HTML, CSS, JS, JSP</b> for the frontend, and <b>MySQL</b> as the database. The project was deployed using <b>Tomcat</b>."
     }
   }
 }
