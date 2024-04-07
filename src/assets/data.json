@@ -1,18 +1,20 @@
 [
   "titulos": {
-    "about_title": {
-      "español": "About",
-      "english": "About"
+    "about": {
+      "title": {
+        "español": "About",
+        "english": "About"
+      },
+      "text": {
+        "español": "<p>Mi nombre es Gino Bartolucci, vivo en Argentina. Estoy estudiando Ingeniería en Sistemas, aunque también soy autodidacta. Siempre estoy conociendo tecnologías nuevas o mejorando en las que ya conozco. </p>",
+        "english": "<p>Hi my name is Gino Bartolucci, Im living in Argentina and study System Engineering, i am also self-taught. Always looking for new technologies to learn or getting better in the ones i alrrady know.</p>"
+      }
     },
-    "about_text": {
-      "español": "<p>Mi nombre es Gino Bartolucci, vivo en Argentina. Estoy estudiando Ingeniería en Sistemas, aunque también soy autodidacta. Siempre estoy conociendo tecnologías nuevas o mejorando en las que ya conozco. </p>",
-      "english": "<p>Hi my name is Gino Bartolucci, Im living in Argentina and study System Engineering, i am also self-taught. Always looking for new technologies to learn or getting better in the ones i alrrady know.</p>"
-    },
-    "skils_title": {
+    "skils": {
       "español": "My Skils",
       "english": "My Skils"
     },
-    "projects_title": {
+    "proyectos": {
       "español": "Mis Proyectos",
       "english": "My Projects"
     }
