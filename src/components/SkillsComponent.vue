@@ -27,8 +27,6 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import SkilsLogo from "./childsComponents/SkilsLogo.vue";
-import dataSkils from "../assets/data.json";
-
 
 export default {
   inject: ["language"],  
@@ -48,12 +46,17 @@ export default {
         opacity: 0,
       });
     });
+    fetch("https://raw.githubusercontent.com/GinoBartolucci/portfolio/main/src/assets/data.json")
+      .then((response) => response.json())
+      .then((data) => {
+        this.logos = data.skils;
+      });
   },
   data() {
     return {
       title: "",
       idioma: this.language,
-      logos: dataSkils["skils"],
+      logos: {},
     };
   },
   watch: {

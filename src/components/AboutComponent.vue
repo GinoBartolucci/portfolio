@@ -11,12 +11,11 @@
 <script>
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import jsonData from "../assets/data.json";
 
 export default {
   inject: ["language"],
   mounted() {
-    this.defineLanguage(this.idioma);
+    //this.defineLanguage(this.idioma);
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.utils.toArray(".about-text").forEach((cardE) => {
@@ -41,27 +40,34 @@ export default {
       duration: 1,
       opacity: 0,
     });
+    fetch("https://raw.githubusercontent.com/GinoBartolucci/portfolio/main/src/assets/data.json")
+        .then((response) => response.json())
+        .then((data) => {
+          this.about = data.titulos.about;
+          this.textAbout = data.titulos.about.text.español;
+        });
   },
   data() {
     return {
+      about: {},
       textAbout: "",
       idioma: this.language,
     };
   },
-  watch: {
-    idioma(newValue) {
-      this.defineLanguage(newValue);
-    },
-  },
+  // watch: {
+  //   idioma(newValue) {
+  //     this.defineLanguage(newValue);
+  //   },
+  // },
   methods: {
-    defineLanguage(lang) {
-      if (lang == "es") {
-        this.textAbout = jsonData["about-text"]["español"];
-      }
-      if (lang == "en") {
-        this.textAbout = jsonData["about-text"]["english"];
-      }
-    },
+    // defineLanguage(lang) {
+    //   if (lang == "es") {
+    //     this.textAbout = this.about.text.español;
+    //   }
+    //   if (lang == "en") {
+    //     this.textAbout = this.about.text.english;
+    //   }
+    // },
   },
 };
 </script>

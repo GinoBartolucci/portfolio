@@ -1,7 +1,12 @@
 <template>
   <h1 class="titles">{{ title }}</h1>
-  <form-contact></form-contact>
+  <form-contact></form-contact>  
   <div id="social-media">
+  <div>
+  <form action="./gino_bartolucci_resume.pdf">
+    <button class="btn btn-primary">Descargar CV</button>
+  </form>
+  </div>
     <a href="https://github.com/GinoBartolucci" target="_blank">
       <img alt="github Logo" src="../assets/logos/hub-logo.png" />
     </a>
@@ -62,6 +67,9 @@ export default {
         this.title = "Contact";
       }
     },
+    downlosdCV() {
+      window.open("@/gino_bartolucci_resume.pdf", "_blank");
+    },
   },
 };
 </script>
@@ -105,5 +113,29 @@ export default {
   textarea {
     margin-top: 0;
   }
+}
+button {
+  padding: 0.8rem;
+  margin: 1rem 1.5rem;
+  font-size: inherit;
+  background-color: #ffffff;
+  border: 1px solid var(--dark-2-color);
+  border-radius: 5px;
+  flex: auto;
+  resize: vertical;
+  outline: none;
+  font-family: inherit;
+}
+button:hover {
+  outline: none;
+  box-shadow: 0px 0px 3px 1px var(--dark-color);
+}
+.dark-mode button {
+  background-color: var(--dark-2-color);
+  color: var(--light-2-color);
+}
+.dark-mode button:hover {
+  outline: none;
+  box-shadow: 0px 0px 3px 1px var(--light-color);
 }
 </style>

@@ -1,17 +1,17 @@
-<template>  <header-component> </header-component>
-
-  <div class="toggles">
-    <div>
+<template>  
+<header-component> </header-component>
+  <!-- <div >
+    <div class="toggles">
       <DarkModeToggle @GetDarkMode="SetDarkMode"></DarkModeToggle>
-      <!-- <LanguageToggle @GetLanguageMode="SetLanguageMode"></LanguageToggle> -->
+      <LanguageToggle @GetLanguageMode="SetLanguageMode"></LanguageToggle>
     </div>
-  </div>
+  </div> -->
   <div :class="{ 'dark-mode': cssMode }" class="main">
     <div class="toggle-transitions">
       <div class="container">
         <profile-about></profile-about>
-        <skills-component></skills-component>
         <portfolio-experience></portfolio-experience>
+        <skills-component></skills-component>
         <social-media></social-media>
       </div>
     </div>
@@ -24,7 +24,7 @@ import ProfileAbout from "./components/AboutComponent.vue";
 import SocialMedia from "./components/ContactComponent.vue";
 import SkillsComponent from "./components/SkillsComponent.vue";
 import HeaderComponent from "./components/HeaderComponent.vue";
-import DarkModeToggle from "./components/childsComponents/DarkModeToggle.vue";
+// import DarkModeToggle from "./components/childsComponents/DarkModeToggle.vue";
 // import LanguageToggle from "./components/childsComponents/LanguageToggle.vue";
 import { gsap } from "gsap";
 import { computed } from "vue";
@@ -35,7 +35,7 @@ export default {
     SocialMedia,
     SkillsComponent,
     HeaderComponent,
-    DarkModeToggle,
+    // DarkModeToggle,
     // LanguageToggle,
   },
   mounted() {

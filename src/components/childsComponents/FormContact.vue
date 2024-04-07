@@ -144,15 +144,7 @@ export default {
         .send('service_dk9ad9a', 'template_ann7z8e', 
         {"name": this.name,"email": this.email,"message": this.message,"subjet": this.subjet}, {
           publicKey: '7rbPhdBu71nb8XZWr',
-        })
-        .then(
-          (response) => {
-            console.log('SUCCESS!', response.status, response.text);
-          },
-          (err) => {
-            console.log('FAILED...', err);
-          },
-        );               
+        })        ;               
         this.name = "";
         this.email = "";
         this.message = "";
