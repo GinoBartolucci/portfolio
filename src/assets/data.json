@@ -96,8 +96,8 @@
       "español": "Un sistema que pueda reunir personas con un mismo interés creando eventos dentro de comunidades. El <a href='https://github.com/GinoBartolucci/TTADS-Backend' target='_blank'><b>Backend</b></a> es una <b>RestApi</b> hecha con <b>Node.js, Mysql</b> con <b>Sequelize</b> y el <a href='https://github.com/GinoBartolucci/TTADS-Frontend' target='_blank'><b>Frontend</b></a> lo hice con <b>vue.js con NuxtJS y Vuetify</b>",
       "english": " A system that can bring together people with the same interest by creating events within communities. The <a href='https://github.com/GinoBartolucci/TTADS-Backend' target='_blank'><b>Backend</b></a> is a <b>RestApi</b> made with <b>Node.js, Mysql</b> with <b>Sequelize</b>, and the <a href='https://github.com/GinoBartolucci/TTADS-Frontend' target='_blank'><b>Frontend</b></a> was done with <b>Vue.js with NuxtJS and Vuetify</b>."
     },
-    "2": {
-      "id": 2,
+    "3": {
+      "id": 3,
       "title": "¿Sueñan los Androides con romper paredes digitales?",
       "image": "breakout.jpg",
       "deploydisabled": false,
@@ -107,8 +107,8 @@
       "español": "Aplicando <b>Algoritmos genéticos con Machine Learning</b> para entrenar una <b>red neuronal</b> que supere el desenpeño de un humano en el juego Breakout de Atari. Utilicé <b>Python</b> y <b>NEAT combinado con Algorimos Geneticos</b> para este proyecto de investigacion. El proyecto y el paper fue <a href='./Presentacion.pdf' target='_blank' ><b>presentado</b></a> en el <b>Conaiisi 2022</b>",
       "english": "Applying <b>Genetic Algorithms with Machine Learning</b> to train a <b>neural network</b> that outperforms a human's performance in the Atari Breakout game. I used <b>Python</b> and <b>NEAT combined with Genetic Algorithms</b> for this research project. The project and the paper were <a href='./Presentacion.pdf' target='_blank' ><b>presented</b></a>presented at <b>Conaiisi 2022</b>"
     },
-    "3": {
-      "id": 3,
+    "2": {
+      "id": 2,
       "title": "Academia",
       "image": "academia-card.jpg",
       "deploydisabled": true,
