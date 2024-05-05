@@ -141,7 +141,7 @@
       "deploydisabled": true,
       "deployButtonName":"Axure RP",
       "deployLink": "",
-      "gitdisabled": false,
+      "gitdisabled": true,
       "gitLink": "https://github.com/GinoBartolucci/JAVA-acceso_libre",
       "español": "<b>Prototipo</b> de una aplicación para las personas de una comunidad en la que puedan administrar un huerto desde una aplicación móvil. Cada usuario puede seleccionar que plantar y en que módulo de la huerta hacerlo. Para el prototipo con validaciones utilicé <b>Axure RP</b>, basándome en las <b>Historias de usuario</b>, <b>Casos de prueba</b> y <b>Diccionarios de datos</b> hechos anteriormente.",
       "english": "<b>Web Application:</b> Ticket sales for shows managed by a production company, purchasable by registered users. When a user attends the event, the production company scans the QR code on the ticket to invalidate it. I used <b>Java Servlets</b> for the backend, <b>HTML, CSS, JS, JSP</b> for the frontend, and <b>MySQL</b> as the database. The project was deployed using <b>Tomcat</b>."
