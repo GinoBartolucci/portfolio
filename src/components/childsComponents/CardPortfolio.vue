@@ -18,7 +18,7 @@
         <i class="pi pi-github"></i>
       </button>
       <button @click="deploy" :class="{buttonDisabled: DataCard['deploydisabled']}" :disabled="DataCard['deploydisabled']" >
-        {{DataCard["id"] == 3 ? "Paper" : "Demo"}}
+        {{DataCard["deployButtonName"]}}
         <i class="pi pi-external-link"></i>
       </button>
     </div>
