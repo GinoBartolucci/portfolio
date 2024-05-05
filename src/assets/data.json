@@ -92,7 +92,7 @@
       "image": "comunidades.jpg",
       "deploydisabled": false,
       "deployButtonName":"Figma",
-      "deployLink": "",
+      "deployLink": "https://www.figma.com/proto/t2Er169sZQTysr8De1UGpT/Eventos?node-id=145-544&starting-point-node-id=145%3A544&disable-default-keyboard-nav=1&hide-ui=1",
       "gitdisabled": false,
       "gitLink": "https://github.com/GinoBartolucci/TTADS-Backend",
       "español": "Un sistema que pueda reunir personas con un mismo interés creando eventos dentro de comunidades. El <a href='https://github.com/GinoBartolucci/TTADS-Backend' target='_blank'><b>Backend</b></a> es una <b>RestApi</b> hecha con <b>Node.js, Mysql</b> con <b>Sequelize</b> y el <a href='https://github.com/GinoBartolucci/TTADS-Frontend' target='_blank'><b>Frontend</b></a> lo hice con <b>vue.js con NuxtJS y Vuetify</b>. El prototipo esta hecho en <b>Figma</b>",
@@ -140,9 +140,9 @@
       "image": "huertas_comunitarias.jpg",
       "deploydisabled": true,
       "deployButtonName":"Axure RP",
-      "deployLink": "",
+      "deployLink": "https://x8njg0.axshare.com/#id=tmcpto&p=menu&g=1",
       "gitdisabled": true,
-      "gitLink": "https://github.com/GinoBartolucci/JAVA-acceso_libre",
+      "gitLink": "",
       "español": "<b>Prototipo</b> de una aplicación para las personas de una comunidad en la que puedan administrar un huerto desde una aplicación móvil. Cada usuario puede seleccionar que plantar y en que módulo de la huerta hacerlo. Para el prototipo con validaciones utilicé <b>Axure RP</b>, basándome en las <b>Historias de usuario</b>, <b>Casos de prueba</b> y <b>Diccionarios de datos</b> hechos anteriormente.",
       "english": "<b>Web Application:</b> Ticket sales for shows managed by a production company, purchasable by registered users. When a user attends the event, the production company scans the QR code on the ticket to invalidate it. I used <b>Java Servlets</b> for the backend, <b>HTML, CSS, JS, JSP</b> for the frontend, and <b>MySQL</b> as the database. The project was deployed using <b>Tomcat</b>."
     }
