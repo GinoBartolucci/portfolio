@@ -138,7 +138,7 @@
       "id": 5,
       "title": "Huertas Comunitarias",
       "image": "huertas_comunitarias.jpg",
-      "deploydisabled": true,
+      "deploydisabled": false,
       "deployButtonName":"Axure RP",
       "deployLink": "https://x8njg0.axshare.com/#id=tmcpto&p=menu&g=1",
       "gitdisabled": true,
