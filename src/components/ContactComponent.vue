@@ -3,9 +3,12 @@
   <form-contact></form-contact>  
   <div id="social-media">
   <div>
-  <form action="./gino_bartolucci_resume.pdf">
-    <button class="btn btn-primary">Descargar CV</button>
-  </form>
+    <div class="card-button">
+      <button @click="downlosdCV">
+        Descargar CV
+        <i class="pi pi-external-link"></i>
+      </button>
+    </div>
   </div>
     <a href="https://github.com/GinoBartolucci" target="_blank">
       <img alt="github Logo" src="../assets/logos/hub-logo.png" />
@@ -66,10 +69,10 @@ export default {
       if (lang == "en") {
         this.title = "Contact";
       }
-    },
-    downlosdCV() {
-      window.open("@/gino_bartolucci_resume.pdf", "_blank");
-    },
+    },    
+      downlosdCV: function(){
+        window.open("./gino_bartolucci_resume.pdf", '_blank');
+      }
   },
 };
 </script>
@@ -114,6 +117,31 @@ export default {
     margin-top: 0;
   }
 }
+.card-button {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    padding: 0.5rem;
+  }
+  .card-button button {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    flex-basis: 50%;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid var(--dark-color);
+    box-shadow: 0px 0px 3px 1px var(--dark-color);
+  }
+  .card-button button i{
+    margin-right: 5px;
+    font-size: inherit;  
+  }
+  .card-button button:hover {
+    background-color: var(--dark-2-color);  
+  }
 button {
   padding: 0.8rem;
   margin: 1rem 1.5rem;
