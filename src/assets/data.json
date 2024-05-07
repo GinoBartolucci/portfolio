@@ -41,6 +41,14 @@
       "logo": "react-logo.png"
     },
     {
+      "nombre": "Axure",
+      "logo": "axure-logo.png"
+    },
+    {
+      "nombre": "Figma",
+      "logo": "figma-logo.png"
+    },
+    {
       "nombre": "SQL",
       "logo": "mql-logo.png"
     },
@@ -79,7 +87,7 @@
       "title": "Generador de Contraseñas",
       "image": "contrasena.jpg",
       "deploydisabled": false,
-      "deployButtonName":"Link",
+      "deployButtonName": "Link",
       "deployLink": "https://ginobartolucci.github.io/generador-contrasenas/",
       "gitdisabled": false,
       "gitLink": "https://github.com/GinoBartolucci/generador-contrasenas",
@@ -91,7 +99,7 @@
       "title": "Comunidades",
       "image": "comunidades.jpg",
       "deploydisabled": false,
-      "deployButtonName":"Figma",
+      "deployButtonName": "Figma",
       "deployLink": "https://www.figma.com/proto/t2Er169sZQTysr8De1UGpT/Eventos?node-id=145-544&starting-point-node-id=145%3A544&disable-default-keyboard-nav=1&hide-ui=1",
       "gitdisabled": false,
       "gitLink": "https://github.com/GinoBartolucci/TTADS-Backend",
@@ -103,7 +111,7 @@
       "title": "¿Sueñan los Androides con romper paredes digitales?",
       "image": "breakout.jpg",
       "deploydisabled": false,
-      "deployButtonName":"Papper",
+      "deployButtonName": "Papper",
       "deployLink": "./Paper.pdf",
       "gitdisabled": false,
       "gitLink": "https://github.com/GinoBartolucci/Neat_Breakout-ML_AG",
@@ -115,7 +123,7 @@
       "title": "Academia",
       "image": "academia-card.jpg",
       "deploydisabled": true,
-      "deployButtonName":"Demo",
+      "deployButtonName": "Demo",
       "deployLink": "",
       "gitdisabled": false,
       "gitLink": "https://github.com/GinoBartolucci/Net-TP2-Grupo1",
@@ -127,7 +135,7 @@
       "title": "Acceso Libre",
       "image": "java_acceso_libre.jpg",
       "deploydisabled": true,
-      "deployButtonName":"Demo",
+      "deployButtonName": "Demo",
       "deployLink": "",
       "gitdisabled": false,
       "gitLink": "https://github.com/GinoBartolucci/JAVA-acceso_libre",
@@ -139,7 +147,7 @@
       "title": "Huertas Comunitarias",
       "image": "huertas_comunitarias.jpg",
       "deploydisabled": true,
-      "deployButtonName":"Axure RP",
+      "deployButtonName": "Axure RP",
       "deployLink": "https://x8njg0.axshare.com/#id=tmcpto&p=menu&g=1",
       "gitdisabled": true,
       "gitLink": "",
