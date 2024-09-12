@@ -41,6 +41,10 @@
       "logo": "react-logo.png"
     },
     {
+      "nombre": "Angular",
+      "logo": "angular-logo"
+    },
+    {
       "nombre": "Axure",
       "logo": "axure-logo.png"
     },
@@ -93,6 +97,18 @@
       "gitLink": "https://github.com/GinoBartolucci/generador-contrasenas",
       "español": "Genera contraseñas utilizando las palabras (1000) mas comunes en español seleccionadas aleatoriamente, ademas de seguro es fácil de recordar. Un formulario permite<b> ajustar la seguridad de la contraseña</b> cambiando parámetros como la longitud y caracteres especiales. Utilice <b>Vue 3</b> con <b>Vite</b>.",
       "english": "Generates passwords using the (1000) most common words in Spanish selected randomly, also securely easy to remember. A form allows <b>adjusting the password security</b> by changing parameters such as length and special characters. Use <b>Vue 3</b> with <b>Vite</b>."
+    },
+    "6": {
+      "id": 6,
+      "title": "Linke.ar",
+      "image": "linke-ar.jpg",
+      "deploydisabled": false,
+      "deployButtonName": "Figma",
+      "deployLink": "https://linke-ar.vercel.app/",
+      "gitdisabled": false,
+      "gitLink": "https://github.com/GinoBartolucci/linke.ar",
+      "español": "Aplicación web full stack, hice la API y el front con <b>Next 14 React y tailwind en typescript</b>. El deploy en Vercel y postgres para la base de datos",
+      "english": "A system that can bring together people with the same interest by creating events within communities. The <a href='https://github.com/GinoBartolucci/TTADS-Backend' target='_blank'><b>Backend</b></a> is a <b>RestApi</b> made with <b>Node.js, Mysql</b> with <b>Sequelize</b>, and the <a href='https://github.com/GinoBartolucci/TTADS-Frontend' target='_blank'><b>Frontend</b></a> was done with <b>Vue.js with NuxtJS and Vuetify</b>."
     },
     "1": {
       "id": 1,
