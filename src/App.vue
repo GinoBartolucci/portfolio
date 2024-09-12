@@ -1,6 +1,6 @@
 <template>  
 <header-component> </header-component>
-  <!-- <div >
+   <!--<div >
     <div class="toggles">
       <DarkModeToggle @GetDarkMode="SetDarkMode"></DarkModeToggle>
       <LanguageToggle @GetLanguageMode="SetLanguageMode"></LanguageToggle>
