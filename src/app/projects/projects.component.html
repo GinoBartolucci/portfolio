@@ -1,19 +1,33 @@
-<div>
-  <h1 class="font-fira text-6xl text-center">Projects</h1>
-  <p>Here are some of the projects I have worked on.</p>
-  <div class="flex flex-col items-center rounded-lg md:flex-row md:max-w-x">
-    <img
-      class="object-cover rounded-lg"
-      src="/images/linke-ar.jpg"
-      alt=""
-      height="400"
-      width="533" />
-    <div class="flex flex-col justify-center items-start p-4 leading-normal h-[400px]">
-      <h3 class="mb-auto">Noteworthy technology acquisitions 2021</h3>
-      <p class="mb-auto font-normal text-gray-700 dark:text-gray-400">
-        Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse
-        chronological order.
-      </p>
+<div class="max-w-[1280px]">
+  <h1
+    class="animate-fade-up animate-delay-500 animate-duration-200 font-fira mb-12 text-7xl text-center">
+    Projectos
+  </h1>
+  @for (item of proyectos; track item.id) {
+    <div
+      class="flex p-2 mb-12 items-center rounded-lg md:max-w-x shadow-md"
+      [ngClass]="{
+        'flex-column md:flex-row-reverse animate-fade-left': item.id % 2 === 0,
+        'flex-row animate-fade-right': item.id % 2 != 0,
+      }">
+      <img class="object-cover rounded-lg" [src]="item.image" alt="" height="300" width="400" />
+      <div class="flex flex-col justify-center text-center p-4 leading-normal h-[300px]">
+        <h3 class="font-fira text-5xl mb-auto">{{ item.titulo }}</h3>
+        <p class="font-fira mb-auto px-6 p-3 text-2xl font-normal text-gray-700 dark:text-gray-600">
+          {{ item.descripcion }}
+        </p>
+        <div class="flex justify-evenly items-center text-green p-2 mb-3">
+          @for (button of item.buttons; track $index) {
+            <a
+              [href]="button.link"
+              target="_blank"
+              class="flex justify-center items-center text-center p-2 animate-fade text-2xl rounded-lg border-2 hover:shadow-sm hover:bg-slate-100">
+              {{ button.text
+              }}<ng-icon [name]="button.icon" class="ml-1" size="35" color="black"></ng-icon>
+            </a>
+          }
+        </div>
+      </div>
     </div>
-  </div>
+  }
 </div>
