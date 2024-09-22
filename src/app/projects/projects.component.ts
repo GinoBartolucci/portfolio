@@ -97,7 +97,7 @@ export class ProjectsComponent {
       titulo: '¿Sueñan los Androides con romper paredes digitales?',
       image: 'images/presentacion.jpg',
       descripcion:
-        'Algoritmos genéticos con Machine Learning para entrenar una red neuronal que supere un humano en el juego Breakout. Utilicé Python, NEAT, NumPy y Pandas. El proyecto y el paper fue presentado en el Conaiisi 2022',
+        'Algoritmos genéticos con Machine Learning para entrenar una red neuronal que supere un humano en el juego Breakout. Utilicé Python, NEAT, NumPy y Pandas. El proyecto fue presentado en el Conaiisi 2022',
       buttons: [
         {
           text: 'GitHub',
