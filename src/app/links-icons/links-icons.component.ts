@@ -2,6 +2,12 @@ import {Component, Input} from '@angular/core'
 import {NgIconComponent, provideIcons} from '@ng-icons/core'
 import {ionLogoLinkedin, ionLogoGithub, ionOpenOutline} from '@ng-icons/ionicons'
 
+interface IconLink {
+  icon: string
+  link: string
+}
+;[]
+
 @Component({
   selector: 'app-links-icons',
   standalone: true,
@@ -17,5 +23,5 @@ import {ionLogoLinkedin, ionLogoGithub, ionOpenOutline} from '@ng-icons/ionicons
   styleUrl: './links-icons.component.css',
 })
 export class LinksIconsComponent {
-  @Input() icons_links: {icon: string; link: string}[] = []
+  @Input() icons_links: IconLink[] = []
 }

@@ -2,13 +2,27 @@ import {Component} from '@angular/core'
 import {NgModule} from '@angular/core'
 import {CommonModule} from '@angular/common' // Asegúrate de importar esto
 import {NgIconComponent, provideIcons} from '@ng-icons/core'
-import {ionLogoGithub, ionOpenOutline} from '@ng-icons/ionicons'
+import {
+  ionLogoGithub,
+  ionOpenOutline,
+  ionLogoFigma,
+  ionLogoYoutube,
+  ionDocumentTextOutline,
+} from '@ng-icons/ionicons'
 
 @Component({
   selector: 'app-projects',
   standalone: true,
   imports: [NgIconComponent, CommonModule],
-  providers: [provideIcons({ionLogoGithub, ionOpenOutline})],
+  providers: [
+    provideIcons({
+      ionLogoGithub,
+      ionOpenOutline,
+      ionLogoFigma,
+      ionLogoYoutube,
+      ionDocumentTextOutline,
+    }),
+  ],
   templateUrl: './projects.component.html',
   styles: ``,
 })
@@ -16,37 +30,6 @@ export class ProjectsComponent {
   proyectos = [
     {
       id: 1,
-      titulo: 'Generador de Contraseñas',
-      image: 'images/passgen.jpg',
-      color: 'slate-950',
-      bgColor: 'emerald-900',
-      descripcion:
-        'Genera contraseñas utilizando las palabras (1000) mas comunes en español seleccionadas aleatoriamente, ademas de seguro es fácil de recordar. Un formulario permite ajustar la seguridad de la contraseña cambiando parámetros como la longitud y caracteres especiales. Utilice Vue 3 con Vite.',
-      buttons: [
-        {
-          text: 'GitHub',
-          icon: 'ionLogoGithub',
-          link: 'https://github.com/GinoBartolucci/generador-contrasenas',
-        },
-        {
-          text: 'Deploy',
-          icon: 'ionOpenOutline',
-          link: 'https://passgen.ginobartolucci.com.ar/',
-        },
-      ],
-      tags: [
-        {
-          icon: 'ionLogoLinkedin',
-          link: 'https://linkedin.com/in/ginobartolucci',
-        },
-        {
-          icon: 'ionLogoLinkedin',
-          link: 'https://linkedin.com/in/ginobartolucci',
-        },
-      ],
-    },
-    {
-      id: 2,
       titulo: 'Acortador de links Linke.ar',
       image: 'images/linke-ar.jpg',
       descripcion:
@@ -55,22 +38,33 @@ export class ProjectsComponent {
         {
           text: 'GitHub',
           icon: 'ionLogoGithub',
+          link: 'https://github.com/GinoBartolucci/linke.ar',
+        },
+        {
+          text: 'Deploy',
+          icon: 'ionOpenOutline',
+          link: 'https://linke-ar.ginobartolucci.com.ar/',
+        },
+      ],
+    },
+    {
+      id: 2,
+      titulo: 'Generador de Contraseñas',
+      image: 'images/passgen.jpg',
+      color: 'slate-950',
+      bgColor: 'emerald-900',
+      descripcion:
+        'Genera contraseñas utilizando las palabras (1000) mas comunes en español. Un formulario permite ajustar la seguridad de la contraseña cambiando parámetros como la longitud y caracteres especiales. Utilice Vue 3 con Vite.',
+      buttons: [
+        {
+          text: 'GitHub',
+          icon: 'ionLogoGithub',
           link: 'https://github.com/GinoBartolucci/generador-contrasenas',
         },
         {
           text: 'Deploy',
           icon: 'ionOpenOutline',
           link: 'https://passgen.ginobartolucci.com.ar/',
-        },
-      ],
-      tags: [
-        {
-          icon: 'ionLogoLinkedin',
-          link: 'https://linkedin.com/in/ginobartolucci',
-        },
-        {
-          icon: 'ionLogoLinkedin',
-          link: 'https://linkedin.com/in/ginobartolucci',
         },
       ],
     },
@@ -84,56 +78,46 @@ export class ProjectsComponent {
         {
           text: 'GitHub Front',
           icon: 'ionLogoGithub',
-          link: 'https://github.com/GinoBartolucci/generador-contrasenas',
+          link: 'https://github.com/GinoBartolucci/TTADS-Frontend',
         },
         {
           text: 'GitHub Back',
           icon: 'ionLogoGithub',
-          link: 'https://github.com/GinoBartolucci/generador-contrasenas',
+          link: 'https://github.com/GinoBartolucci/TTADS-Backend',
         },
         {
           text: 'Figma',
-          icon: 'ionOpenOutline',
-          link: 'https://passgen.ginobartolucci.com.ar/',
-        },
-      ],
-      tags: [
-        {
-          icon: 'ionLogoLinkedin',
-          link: 'https://linkedin.com/in/ginobartolucci',
-        },
-        {
-          icon: 'ionLogoLinkedin',
-          link: 'https://linkedin.com/in/ginobartolucci',
+          icon: 'ionLogoFigma',
+          link: 'https://www.figma.com/proto/t2Er169sZQTysr8De1UGpT/Eventos?node-id=145-544&starting-point-node-id=145%3A544&disable-default-keyboard-nav=1&hide-ui=1',
         },
       ],
     },
     {
       id: 4,
-      titulo: 'Generador de Contraseñas',
-      image: 'images/passgen.jpg',
+      titulo: '¿Sueñan los Androides con romper paredes digitales?',
+      image: 'images/presentacion.jpg',
       descripcion:
-        'Genera contraseñas utilizando las palabras (1000) mas comunes en español seleccionadas aleatoriamente, ademas de seguro es fácil de recordar. Un formulario permite ajustar la seguridad de la contraseña cambiando parámetros como la longitud y caracteres especiales. Utilice Vue 3 con Vite.',
+        'Algoritmos genéticos con Machine Learning para entrenar una red neuronal que supere un humano en el juego Breakout. Utilicé Python, NEAT, NumPy y Pandas. El proyecto y el paper fue presentado en el Conaiisi 2022',
       buttons: [
         {
           text: 'GitHub',
           icon: 'ionLogoGithub',
-          link: 'https://github.com/GinoBartolucci/generador-contrasenas',
+          link: 'https://github.com/GinoBartolucci/Neat_Breakout-ML_AG',
         },
         {
-          text: 'Deploy',
-          icon: 'ionOpenOutline',
-          link: 'https://passgen.ginobartolucci.com.ar/',
-        },
-      ],
-      tags: [
-        {
-          icon: 'ionLogoLinkedin',
-          link: 'https://linkedin.com/in/ginobartolucci',
+          text: 'Papper',
+          icon: 'ionDocumentTextOutline',
+          link: 'Paper.pdf',
         },
         {
-          icon: 'ionLogoLinkedin',
-          link: 'https://linkedin.com/in/ginobartolucci',
+          text: 'Presentación',
+          icon: 'ionDocumentTextOutline',
+          link: 'Presentacion.pdf',
+        },
+        {
+          text: 'Video',
+          icon: 'ionLogoYoutube',
+          link: 'https://www.youtube.com/watch?v=0kaCRvTS7pk',
         },
       ],
     },

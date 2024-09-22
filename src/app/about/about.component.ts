@@ -1,13 +1,13 @@
 import {Component} from '@angular/core'
 import {NgxTypedWriterModule} from 'ngx-typed-writer'
 import {NgIconComponent, provideIcons} from '@ng-icons/core'
-import {ionLogoLinkedin, ionLogoGithub, ionOpenOutline} from '@ng-icons/ionicons'
+import {ionLogoLinkedin, ionLogoGithub, ionDownloadOutline} from '@ng-icons/ionicons'
 
 @Component({
   selector: 'app-about',
   standalone: true,
   imports: [NgxTypedWriterModule, NgIconComponent],
-  providers: [provideIcons({ionLogoLinkedin, ionLogoGithub, ionOpenOutline})],
+  providers: [provideIcons({ionLogoLinkedin, ionLogoGithub, ionDownloadOutline})],
   template: `
     <div class="flex flex-col lg:flex-row items-center justify-center w-full p-2">
       <img
@@ -20,12 +20,12 @@ import {ionLogoLinkedin, ionLogoGithub, ionOpenOutline} from '@ng-icons/ionicons
       <div class="flex flex-col justify-center items-center ml-3">
         <ngx-typed-writer
           class=" animate-fade mt-1 font-fira font-medium text-4xl sm:text-[2.7rem] text-center tracking-tight  lg:min-w-[730px]"
-          [strings]="['Gino Bartolucci | Dev Fullstack']"
+          [strings]="['Gino bartolucci', 'Gino Bartolucci', 'Gino Bartolucci | Dev Fullstack']"
           [cursorChar]="'|'"
           [showCursor]="true"
           [backSpeed]="30"
           [typeSpeed]="50"
-          [backDelay]="3000"
+          [backDelay]="2500"
           [startDelay]="1500"
           [smartBackspace]="true"
           [loop]="false">
@@ -59,8 +59,8 @@ export class AboutComponent {
       link: 'https://github.com/GinoBartolucci',
     },
     {
-      icon: 'ionOpenOutline',
-      link: 'https://linkedin.com/in/ginobartolucci',
+      icon: 'ionDownloadOutline',
+      link: 'gino_bartolucci_resume.pdf',
     },
   ]
 }
