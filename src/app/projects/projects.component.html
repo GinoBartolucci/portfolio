@@ -1,12 +1,12 @@
 <div class="flex flex-col items-center justify-center w-full mt-24 md:mt-40">
   <h1
-    class="animate-fade-up animate-delay-500 animate-duration-200 font-fira mb-12 text-4xl md:text-7xl text-center">
+    class="animate-fade-up animate-delay-500 animate-duration-200 font-fira mb-12 text-5xl md:text-7xl text-center">
     Proyectos
   </h1>
   <content class="flex flex-row flex-wrap justify-center lg:flex-col px-3">
     @for (item of proyectos; track item.id) {
       <div
-        class="flex flex-col lg:flex-row items-center p-2 mx-3 lg:mx-0 mb-12 max-w-[400px] lg:max-w-full border-2 rounded-lg shadow-md"
+        class="flex flex-col lg:flex-row items-center p-2 mx-3 lg:mx-0 mb-12 max-w-[400px] lg:max-w-full rounded-lg shadow-md"
         [ngClass]="{
           'lg:flex-row-reverse animate-fade-left': item.id % 2 === 0,
           'lg:flex-row animate-fade-right': item.id % 2 != 0,

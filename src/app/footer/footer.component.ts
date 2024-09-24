@@ -1,23 +1,20 @@
 import {Component} from '@angular/core'
 import {NgIconComponent, provideIcons} from '@ng-icons/core'
 import {ionLogoLinkedin, ionLogoGithub, ionDownloadOutline} from '@ng-icons/ionicons'
+import {LinksIconsComponent} from '../links-icons/links-icons.component'
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [NgIconComponent],
+  imports: [NgIconComponent, LinksIconsComponent],
   providers: [provideIcons({ionLogoLinkedin, ionLogoGithub, ionDownloadOutline})],
   template: `
     <footer class="flex flex-col justify-center items-center h-[200px] text-center">
-      <span class="text-center p-5 text-lg italic">By Gino Bartolucci</span>
+      <span class="font-fira text-center p-5 text-lg italic font-medium text-gray-700"
+        >By Gino Bartolucci</span
+      >
       <div class="flex justify-center items-center">
-        <div class="flex justify-center gap-10 items-center w-full">
-          @for (item of icons_links; track $index) {
-            <a [href]="item.link" target="_blank" class="animate-fade">
-              <ng-icon [name]="item.icon" size="35" color="grey"></ng-icon>
-            </a>
-          }
-        </div>
+        <app-links-icons />
       </div>
     </footer>
   `,
