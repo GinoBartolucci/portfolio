@@ -13,7 +13,7 @@ import {LinksIconsComponent} from '../links-icons/links-icons.component'
     <div class="flex flex-col lg:flex-row items-center justify-center w-full p-2 mt-24">
       <img
         class="animate-fade-right animate-duration-300 hidden lg:block rounded-lg drop-shadow-lg"
-        src="/images/foto_perfil.jpg"
+        src="/images/foto_perfil.webp"
         alt="foto gino bartolucci"
         width="290"
         height="290"
@@ -43,5 +43,5 @@ import {LinksIconsComponent} from '../links-icons/links-icons.component'
 })
 export class AboutComponent {
   texto =
-    '¡Hola! Soy Gino Bartolucci, soy de Argentina en este momento estoy finalizando la carrera de Ingeniería en Sistemas. Me gusta el Análisis funcional y el Desarrollo full stack, siempre estoy conociendo tecnologías nuevas para aprender.'
+    'Estoy finalizando la carrera de Ingeniería en Sistemas y escuchando ofertas de empleo. Me gusta el Análisis funcional y el Desarrollo full stack, siempre estoy conociendo tecnologías nuevas para aprender.'
 }

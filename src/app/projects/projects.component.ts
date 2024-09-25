@@ -31,7 +31,7 @@ export class ProjectsComponent {
     {
       id: 1,
       titulo: 'Acortador de links Linke.ar',
-      image: 'images/linke-ar.jpg',
+      image: 'images/linke-ar.webp',
       descripcion:
         'Aplicación web full stack, hice la API y el front con Next 14 React y tailwind en typescript. El deploy en Vercel y postgres para la base de datos',
       buttons: [
@@ -41,7 +41,7 @@ export class ProjectsComponent {
           link: 'https://github.com/GinoBartolucci/linke.ar',
         },
         {
-          text: 'Deploy',
+          text: 'Demo',
           icon: 'ionOpenOutline',
           link: 'https://linke-ar.ginobartolucci.com.ar/',
         },
@@ -50,7 +50,7 @@ export class ProjectsComponent {
     {
       id: 2,
       titulo: 'Generador de Contraseñas',
-      image: 'images/passgen.jpg',
+      image: 'images/passgen.webp',
       color: 'slate-950',
       bgColor: 'emerald-900',
       descripcion:
@@ -62,7 +62,7 @@ export class ProjectsComponent {
           link: 'https://github.com/GinoBartolucci/generador-contrasenas',
         },
         {
-          text: 'Deploy',
+          text: 'Demo',
           icon: 'ionOpenOutline',
           link: 'https://passgen.ginobartolucci.com.ar/',
         },
@@ -71,7 +71,7 @@ export class ProjectsComponent {
     {
       id: 3,
       titulo: '¿Sueñan los Androides con romper paredes digitales?',
-      image: 'images/presentacion.jpg',
+      image: 'images/presentacion.webp',
       descripcion:
         'Algoritmos genéticos con Machine Learning para entrenar una red neuronal que supere un humano en el juego Breakout. Utilicé Python, NEAT, NumPy y Pandas. El proyecto fue presentado en el Conaiisi 2022',
       buttons: [
@@ -100,7 +100,7 @@ export class ProjectsComponent {
     {
       id: 4,
       titulo: 'App web ComConnect',
-      image: 'images/com-connect.jpg',
+      image: 'images/com-connect.webp',
       descripcion:
         'Un sistema que pueda reunir personas con un mismo interés creando eventos dentro de comunidades. RestApi hecha con Node.js, Mysql con Sequelize y el Frontend lo hice con vue.js y NuxtJS. El prototipo esta hecho en Figma.',
       buttons: [
@@ -124,7 +124,7 @@ export class ProjectsComponent {
     {
       id: 5,
       titulo: 'AccesoLibre',
-      image: 'images/acceso-libre.jpg',
+      image: 'images/acceso-libre.webp',
       descripcion:
         'Aplicación web para venta de entradas con Java Servlets, JSP, MySQL y Bootstrap, permite a los usuarios comprar entradas y a las productoras venderlas y escanearlas.',
       buttons: [
@@ -138,7 +138,7 @@ export class ProjectsComponent {
     {
       id: 6,
       titulo: 'Academia',
-      image: 'images/academia.jpg',
+      image: 'images/academia.webp',
       descripcion:
         'Aplicación web y escritorio para para una academia con C#, .Net, Web y Win Forms. La app permite administrar horarios de cursos profesores y materias.',
       buttons: [

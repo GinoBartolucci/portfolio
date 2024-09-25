@@ -16,7 +16,11 @@ interface IconLink {
   template: `
     <div class="flex justify-center gap-10 items-center w-full">
       @for (item of icons_links; track $index) {
-        <a [href]="item.link" target="_blank" class="animate-fade hover:scale-105">
+        <a
+          [href]="item.link"
+          target="_blank"
+          [name]="item.icon"
+          class="animate-fade hover:scale-105">
           <ng-icon [name]="item.icon" size="35" color="grey"></ng-icon>
         </a>
       }
