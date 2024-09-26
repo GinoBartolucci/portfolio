@@ -14,7 +14,7 @@ interface IconLink {
   imports: [NgIconComponent],
   providers: [provideIcons({ionLogoLinkedin, ionLogoGithub, ionOpenOutline})],
   template: `
-    <div class="flex justify-center gap-10 items-center w-full">
+    <div class="flex justify-center gap-6 items-center w-full">
       @for (item of icons_links; track $index) {
         <a
           [href]="item.link"

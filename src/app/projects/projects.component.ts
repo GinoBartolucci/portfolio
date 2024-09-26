@@ -33,7 +33,7 @@ export class ProjectsComponent {
       titulo: 'Acortador de links Linke.ar',
       image: 'images/linke-ar.webp',
       descripcion:
-        'Aplicación web full stack, hice la API y el front con Next 14 React y tailwind en typescript. El deploy en Vercel y postgres para la base de datos',
+        'Aplicación web full stack, hice la API y el front con Next 14 React y tailwind en typescript. El deploy en Vercel con postgres para la base de datos. También integrado con auth de Google.',
       buttons: [
         {
           text: 'GitHub',

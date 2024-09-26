@@ -1,16 +1,12 @@
-<div class="flex flex-col items-center justify-center w-full mt-24 md:mt-40">
+<div class="flex flex-col items-center justify-center w-full mt-12 sm:mt-16 md:mt-32">
   <h1
-    class="animate-fade-up animate-delay-500 animate-duration-200 font-fira mb-20 text-4xl md:text-6xl text-center">
-    Proyectos
+    class="animate-fade-up animate-delay-500 animate-duration-200 font-fira lg:ml-3 mb-16 text-right text-3xl md:text-5xl text-gray-900">
+    Proyectos | Experiencia
   </h1>
   <content class="flex flex-row flex-wrap justify-center lg:flex-col px-3">
     @for (item of proyectos; track item.id) {
-      <div
-        class="flex flex-col lg:flex-row items-center p-2 mx-3 lg:mx-0 mb-12 max-w-[400px] lg:max-w-full rounded-lg shadow-md"
-        [ngClass]="{
-          'lg:flex-row-reverse animate-fade-left': item.id % 2 === 0,
-          'lg:flex-row animate-fade-right': item.id % 2 != 0,
-        }">
+      <article
+        class="flex flex-col lg:flex-row items-center mx-3 lg:mx-0 mb-12 max-w-[400px] lg:max-w-full rounded-lg">
         <img
           class="object-cover rounded-lg w-full h-auto lg:w-[400px] lg:h-[300px]"
           [ngSrc]="item.image"
@@ -18,25 +14,30 @@
           width="400"
           height="300" />
         <div
-          class="flex flex-col justify-between items-center text-center p-4 leading-normal h-full lg:min-h-[300px]">
-          <h2 class="font-fira mb-auto text-2xl lg:text-[2.5rem]">{{ item.titulo }}</h2>
-          <p
-            class="font-fira px-3 py-4 xl:px-6 xl:py-3 text-lg lg:text-[1.35rem] font-normal text-gray-700">
+          class="flex flex-col justify-between p-4 ml-4 xl:px-8 xl:py-3 leading-normal h-full lg:min-h-[300px]">
+          <h2 class="mb-auto px-3 text-2xl lg:text-3xl text-center sm:text-left text-gray-900">
+            {{ item.titulo }}
+          </h2>
+          <p class="px-3 py-4 font-light text-lg lg:text-[1.35rem] max-w-[650px] text-gray-800">
             {{ item.descripcion }}
           </p>
-          <div class="flex flex-wrap justify-around items-center mt-auto">
+          <div class="flex flex-wrap justify-center gap-4 items-center mt-auto">
             @for (button of item.buttons; track $index) {
               <a
                 [href]="button.link"
                 target="_blank"
-                class="flex justify-center items-center text-center m-1 px-2 py-1 xl:p-2 animate-fade text-xl xl:text-2xl rounded-lg border-2 hover:shadow-sm hover:bg-slate-100">
+                class="button flex justify-center items-center text-center m-1 px-2 py-1 animate-fade text-lg xl:text-xl rounded-lg border-2 bg-white hover:shadow-md">
                 {{ button.text
-                }}<ng-icon [name]="button.icon" class="ml-2" size="33" color="black"></ng-icon>
+                }}<ng-icon
+                  [name]="button.icon"
+                  class="icon ml-2 bg-white"
+                  size="28"
+                  color="black"></ng-icon>
               </a>
             }
           </div>
         </div>
-      </div>
+      </article>
     }
   </content>
 </div>

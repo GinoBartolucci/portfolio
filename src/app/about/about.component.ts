@@ -11,7 +11,7 @@ import {NgOptimizedImage} from '@angular/common'
   imports: [NgxTypedWriterModule, NgIconComponent, LinksIconsComponent, NgOptimizedImage],
   providers: [provideIcons({ionLogoLinkedin, ionLogoGithub, ionDownloadOutline})],
   template: `
-    <div class="flex flex-col lg:flex-row items-center justify-center w-full p-2 mt-24">
+    <div class="flex flex-col lg:flex-row items-center justify-center w-full p-2 mt-16 sm:mt-24">
       <img
         class="animate-fade-right animate-duration-300 hidden lg:block rounded-lg drop-shadow-lg"
         ngSrc="images/foto_perfil.webp"
@@ -20,10 +20,10 @@ import {NgOptimizedImage} from '@angular/common'
         width="290"
         height="290"
         priority />
-      <div class="flex flex-col justify-center items-center ml-3">
+      <div class="flex flex-col justify-center items-start lg:ml-6 p-6">
         <ngx-typed-writer
-          class=" animate-fade mt-1 font-fira font-medium text-4xl sm:text-[2.7rem] text-center tracking-tight  lg:min-w-[730px]"
-          [strings]="['Gino bartolucci', 'Gino Bartolucci', 'Gino Bartolucci | Dev Fullstack']"
+          class=" animate-fade my-4 font-fira font-medium text-4xl sm:text-[2.7rem] text-center sm:text-left tracking-tight"
+          [strings]="['Gino bartolucci', 'Gino Bartolucci']"
           [cursorChar]="'|'"
           [showCursor]="true"
           [backSpeed]="30"
@@ -34,10 +34,10 @@ import {NgOptimizedImage} from '@angular/common'
           [loop]="false">
         </ngx-typed-writer>
         <p
-          class="animate-fade animate-duration-300 animate-ease-in font-fira font-light text-center text-xl sm:text-2xl  max-w-[1024px] p-6 self-start text-gray-700">
+          class="animate-fade animate-duration-300 animate-ease-in font-light text-xl sm:text-2xl py-4 max-w-[700px] self-start text-gray-800">
           {{ texto }}
         </p>
-        <app-links-icons />
+        <app-links-icons class="mt-4 self-center sm:self-start" />
       </div>
     </div>
   `,
