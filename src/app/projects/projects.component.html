@@ -1,6 +1,6 @@
 <div class="flex flex-col items-center justify-center w-full mt-12 sm:mt-16 md:mt-32">
   <h1
-    class="animate-fade-up animate-delay-500 animate-duration-200 font-fira lg:ml-3 mb-16 text-right text-3xl md:text-5xl text-gray-900">
+    class="animate-fade-up animate-delay-500 animate-duration-200 font-fira lg:ml-3 mb-16 text-3xl md:text-5xl text-gray-900">
     Proyectos | Experiencia
   </h1>
   <content class="flex flex-row flex-wrap justify-center lg:flex-col px-3">
@@ -8,14 +8,14 @@
       <article
         class="flex flex-col lg:flex-row items-center mx-3 lg:mx-0 mb-12 max-w-[400px] lg:max-w-full rounded-lg">
         <img
-          class="object-cover rounded-lg w-full h-auto lg:w-[400px] lg:h-[300px]"
+          class="object-cover rounded-lg w-full h-auto lg:w-[400px] lg:h-[300px] shadow-md"
           [ngSrc]="item.image"
           [alt]="item.titulo"
           width="400"
           height="300" />
         <div
           class="flex flex-col justify-between p-4 ml-4 xl:px-8 xl:py-3 leading-normal h-full lg:min-h-[300px]">
-          <h2 class="mb-auto px-3 text-2xl lg:text-3xl text-center sm:text-left text-gray-900">
+          <h2 class="mb-auto px-3 text-2xl lg:text-3xl text-left text-gray-900">
             {{ item.titulo }}
           </h2>
           <p class="px-3 py-4 font-light text-lg lg:text-[1.35rem] max-w-[650px] text-gray-800">
@@ -26,7 +26,7 @@
               <a
                 [href]="button.link"
                 target="_blank"
-                class="button flex justify-center items-center text-center m-1 px-2 py-1 animate-fade text-lg xl:text-xl rounded-lg border-2 bg-white hover:shadow-md">
+                class="button flex justify-center items-center text-center m-1 px-2 py-1 animate-fade text-lg xl:text-xl rounded-lg border-2 bg-white shadow-sm hover:shadow-md">
                 {{ button.text
                 }}<ng-icon
                   [name]="button.icon"

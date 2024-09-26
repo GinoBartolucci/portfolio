@@ -16,8 +16,8 @@ body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
 }
-.bg-pattern {
-  background: radial-gradient(circle, #e8e8e8 5%, transparent 10%);
+body {
+  background: radial-gradient(circle, #e8e8e8 8%, transparent 10%);
   background-color: #0000;
   background-size: auto;
   background-size: 1em 1em;

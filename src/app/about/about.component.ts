@@ -22,7 +22,7 @@ import {NgOptimizedImage} from '@angular/common'
         priority />
       <div class="flex flex-col justify-center items-start lg:ml-6 p-6">
         <ngx-typed-writer
-          class=" animate-fade my-4 font-fira font-medium text-4xl sm:text-[2.7rem] text-center sm:text-left tracking-tight"
+          class=" animate-fade my-4 font-fira font-medium text-3xl sm:text-[2.7rem] text-center sm:text-left tracking-tight"
           [strings]="['Gino bartolucci', 'Gino Bartolucci']"
           [cursorChar]="'|'"
           [showCursor]="true"
@@ -33,17 +33,20 @@ import {NgOptimizedImage} from '@angular/common'
           [smartBackspace]="true"
           [loop]="false">
         </ngx-typed-writer>
-        <p
-          class="animate-fade animate-duration-300 animate-ease-in font-light text-xl sm:text-2xl py-4 max-w-[700px] self-start text-gray-800">
-          {{ texto }}
-        </p>
+        <div
+          class="animate-fade animate-duration-300 animate-ease-in font-light text-xl sm:text-2xl py-4 max-w-[600px] self-start text-gray-800">
+          <p class="py-2">
+            Estoy finalizando la carrera de Ingeniería en Sistemas. Me gusta el Análisis funcional y
+            el Desarrollo full stack.
+          </p>
+          <p class="py-1">
+            También soy Técnico Electrónico por lo que me apasiona la robótica y IoT.
+          </p>
+        </div>
         <app-links-icons class="mt-4 self-center sm:self-start" />
       </div>
     </div>
   `,
   styles: ``,
 })
-export class AboutComponent {
-  texto =
-    'Estoy finalizando la carrera de Ingeniería en Sistemas y escuchando ofertas de empleo. Me gusta el Análisis funcional y el Desarrollo full stack, siempre estoy conociendo tecnologías nuevas para aprender.'
-}
+export class AboutComponent {}
