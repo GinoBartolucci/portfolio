@@ -3,18 +3,20 @@ import {NgxTypedWriterModule} from 'ngx-typed-writer'
 import {NgIconComponent, provideIcons} from '@ng-icons/core'
 import {ionLogoLinkedin, ionLogoGithub, ionDownloadOutline} from '@ng-icons/ionicons'
 import {LinksIconsComponent} from '../links-icons/links-icons.component'
+import {NgOptimizedImage} from '@angular/common'
 
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [NgxTypedWriterModule, NgIconComponent, LinksIconsComponent],
+  imports: [NgxTypedWriterModule, NgIconComponent, LinksIconsComponent, NgOptimizedImage],
   providers: [provideIcons({ionLogoLinkedin, ionLogoGithub, ionDownloadOutline})],
   template: `
     <div class="flex flex-col lg:flex-row items-center justify-center w-full p-2 mt-24">
       <img
         class="animate-fade-right animate-duration-300 hidden lg:block rounded-lg drop-shadow-lg"
-        src="/images/foto_perfil.webp"
+        ngSrc="images/foto_perfil.webp"
         alt="foto gino bartolucci"
+        priority
         width="290"
         height="290"
         priority />

@@ -1,5 +1,5 @@
 import {Component} from '@angular/core'
-import {NgModule} from '@angular/core'
+import {NgOptimizedImage} from '@angular/common'
 import {CommonModule} from '@angular/common' // Asegúrate de importar esto
 import {NgIconComponent, provideIcons} from '@ng-icons/core'
 import {
@@ -13,7 +13,7 @@ import {
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [NgIconComponent, CommonModule],
+  imports: [NgIconComponent, CommonModule, NgOptimizedImage],
   providers: [
     provideIcons({
       ionLogoGithub,

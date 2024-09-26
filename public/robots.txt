@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /config/
+
+Disallow: /scripts/
+Disallow: /assets/
+Disallow: /gino_bartolucci_resume.pdf
+Disallow: /Paper.pdf
+Disallow: /Presentacion.pdf
+Disallow: /node_modules/
+
+Allow: /
+
+# Enlace al archivo del sitemap
+Sitemap: https://ginobartolucci.com.ar/sitemap.xml

@@ -21,7 +21,7 @@ interface IconLink {
           target="_blank"
           [name]="item.icon"
           class="animate-fade hover:scale-105">
-          <ng-icon [name]="item.icon" size="35" color="grey"></ng-icon>
+          <ng-icon [name]="item.icon" size="35" color="grey" [name]="item.icon"></ng-icon>
         </a>
       }
     </div>
