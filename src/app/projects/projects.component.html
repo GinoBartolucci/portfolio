@@ -1,6 +1,6 @@
 <div class="flex flex-col items-center justify-center w-full mt-12 sm:mt-16 md:mt-32">
   <h1
-    class="animate-fade-up animate-delay-500 animate-duration-200 font-fira lg:ml-3 mb-16 text-3xl md:text-5xl text-gray-900">
+    class="animate-fade-up animate-delay-500 text-center animate-duration-200 font-fira lg:ml-3 mb-16 text-3xl md:text-5xl text-gray-900">
     Proyectos | Experiencia
   </h1>
   <content class="flex flex-row flex-wrap justify-center lg:flex-col px-3">
@@ -23,17 +23,7 @@
           </p>
           <div class="flex flex-wrap justify-center gap-4 items-center mt-auto">
             @for (button of item.buttons; track $index) {
-              <a
-                [href]="button.link"
-                target="_blank"
-                class="button flex justify-center items-center text-center m-1 px-2 py-1 animate-fade text-lg xl:text-xl rounded-lg border-2 bg-white shadow-sm hover:shadow-md">
-                {{ button.text
-                }}<ng-icon
-                  [name]="button.icon"
-                  class="icon ml-2 bg-white"
-                  size="28"
-                  color="black"></ng-icon>
-              </a>
+              <app-button-icon [button]="button" />
             }
           </div>
         </div>

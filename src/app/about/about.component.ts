@@ -13,7 +13,7 @@ import {NgOptimizedImage} from '@angular/common'
   template: `
     <div class="flex flex-col lg:flex-row items-center justify-center w-full p-2 mt-16 sm:mt-24">
       <img
-        class="animate-fade-right animate-duration-300 hidden lg:block rounded-lg drop-shadow-lg"
+        class="animate-fade-right animate-duration-300 rounded-lg drop-shadow-lg"
         ngSrc="images/foto_perfil.webp"
         alt="foto gino bartolucci"
         priority
@@ -22,7 +22,7 @@ import {NgOptimizedImage} from '@angular/common'
         priority />
       <div class="flex flex-col justify-center items-start lg:ml-6 p-6">
         <ngx-typed-writer
-          class=" animate-fade my-4 font-fira font-medium text-3xl sm:text-[2.7rem] text-center sm:text-left tracking-tight"
+          class=" animate-fade my-1 sm:my-3 font-fira font-medium text-3xl sm:text-[2.7rem] self-center lg:self-start tracking-tight"
           [strings]="['Gino bartolucci', 'Gino Bartolucci']"
           [cursorChar]="'|'"
           [showCursor]="true"
