@@ -10,9 +10,6 @@ import {LinksIconsComponent} from '../links-icons/links-icons.component'
   providers: [provideIcons({ionLogoLinkedin, ionLogoGithub, ionDownloadOutline})],
   template: `
     <footer class="flex flex-col justify-center items-center h-[200px] text-center">
-      <span class="font-fira text-center p-5 text-lg italic font-medium text-gray-700"
-        >By Gino Bartolucci</span
-      >
       <div class="flex justify-center items-center">
         <app-links-icons />
       </div>
