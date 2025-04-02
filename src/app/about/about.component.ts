@@ -8,7 +8,7 @@ import {NgOptimizedImage} from '@angular/common'
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [NgxTypedWriterModule, NgIconComponent, LinksIconsComponent, NgOptimizedImage],
+  imports: [NgxTypedWriterModule, LinksIconsComponent, NgOptimizedImage],
   providers: [provideIcons({ionLogoLinkedin, ionLogoGithub, ionDownloadOutline})],
   template: `
     <div class="flex flex-col lg:flex-row items-center justify-center w-full p-2 mt-16 sm:mt-24">
@@ -17,8 +17,8 @@ import {NgOptimizedImage} from '@angular/common'
         ngSrc="images/foto_perfil.webp"
         alt="foto gino bartolucci"
         priority
-        width="290"
-        height="290"
+        width="320"
+        height="320"
         priority />
       <div class="flex flex-col justify-center items-start lg:ml-6 p-6">
         <ngx-typed-writer
@@ -34,13 +34,15 @@ import {NgOptimizedImage} from '@angular/common'
           [loop]="false">
         </ngx-typed-writer>
         <div
-          class="animate-fade animate-duration-300 animate-ease-in font-light text-xl sm:text-2xl py-4 max-w-[600px] self-start text-gray-800">
+          class="animate-fade animate-duration-300 animate-ease-in font-light text-xl sm:text-2xl py-4 max-w-[790px] self-start text-gray-800">
           <p class="py-2">
-            Estoy finalizando la carrera de Ingeniería en Sistemas. Me gusta el Análisis funcional y
-            el Desarrollo full stack.
+            Soy estudiante en la etapa final de la carrera de Ingeniería en Sistemas y actualmente
+            me desempeño como pasante en el Ministerio de Desarrollo Productivo del Gobierno de
+            Santa Fe, donde trabajo como desarrollador Full Stack.
           </p>
           <p class="py-1">
-            También soy Técnico Electrónico por lo que me apasiona la robótica y IoT.
+            En el futuro, me gustaría especializarme y desarrollar mi carrera en el ámbito de la
+            Ingeniería en Sistemas.
           </p>
         </div>
         <app-links-icons class="mt-4 self-center sm:self-start" />

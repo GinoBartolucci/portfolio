@@ -6,7 +6,7 @@ import {LinksIconsComponent} from '../links-icons/links-icons.component'
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [NgIconComponent, LinksIconsComponent],
+  imports: [LinksIconsComponent],
   providers: [provideIcons({ionLogoLinkedin, ionLogoGithub, ionDownloadOutline})],
   template: `
     <footer class="flex flex-col justify-center items-center h-[200px] text-center">

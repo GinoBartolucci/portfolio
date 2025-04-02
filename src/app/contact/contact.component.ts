@@ -6,10 +6,10 @@ import {ionMail} from '@ng-icons/ionicons'
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [ButtonIconComponent, NgIconComponent],
+  imports: [NgIconComponent],
   providers: [provideIcons({ionMail})],
   template: `
-    <section class="mt-12 font-fira text-center">
+    <section class="mt-12 font-fira text-center p-2">
       <hr class="mb-12" />
       <h2 class="text-3xl md:text-5xl text-gray-900">¿Tenes un proyecto en mente?</h2>
       <div class="flex items-center justify-center m-4 hover:underline">
