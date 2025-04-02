@@ -15,7 +15,7 @@ import {ExperienciaComponent} from './experiencia/experiencia.component'
     ProjectsComponent,
     FooterComponent,
     ContactComponent,
-    ExperienciaComponent,
+    //ExperienciaComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

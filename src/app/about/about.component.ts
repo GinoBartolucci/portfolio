@@ -11,9 +11,9 @@ import {NgOptimizedImage} from '@angular/common'
   imports: [NgxTypedWriterModule, LinksIconsComponent, NgOptimizedImage],
   providers: [provideIcons({ionLogoLinkedin, ionLogoGithub, ionDownloadOutline})],
   template: `
-    <div class="flex flex-col lg:flex-row items-center justify-center w-full p-2 mt-16 sm:mt-24">
+    <div class="flex flex-col lg:flex-row items-center justify-center w-full p-2 mt-12 sm:mt-16">
       <img
-        class="animate-fade-right animate-duration-300 rounded-lg drop-shadow-lg"
+        class="animate-fade-right animate-duration-300 rounded-lg drop-shadow-lg hidden lg:block"
         ngSrc="images/foto_perfil.webp"
         alt="foto gino bartolucci"
         priority
@@ -22,7 +22,7 @@ import {NgOptimizedImage} from '@angular/common'
         priority />
       <div class="flex flex-col justify-center items-start lg:ml-6 p-6">
         <ngx-typed-writer
-          class=" animate-fade my-1 sm:my-3 font-fira font-medium text-3xl sm:text-[2.7rem] self-center lg:self-start tracking-tight"
+          class=" animate-fade my-1 font-fira font-medium text-3xl sm:text-[2.7rem] self-center lg:self-start tracking-tight"
           [strings]="['Gino bartolucci', 'Gino Bartolucci']"
           [cursorChar]="'|'"
           [showCursor]="true"
@@ -45,7 +45,7 @@ import {NgOptimizedImage} from '@angular/common'
             Ingeniería en Sistemas.
           </p>
         </div>
-        <app-links-icons class="mt-4 self-center sm:self-start" />
+        <app-links-icons class="mt-2 self-center sm:self-start" />
       </div>
     </div>
   `,
