@@ -1,4 +1,6 @@
+import { HttpClient } from "@angular/common/http"
 import { ComponentFixture, TestBed } from "@angular/core/testing"
+import { of } from "rxjs"
 
 import { ProjectsComponent } from "./projects.component"
 
@@ -9,6 +11,14 @@ describe("ProjectsComponent", () => {
 	beforeEach(async () => {
 		await TestBed.configureTestingModule({
 			imports: [ProjectsComponent],
+			providers: [
+				{
+					provide: HttpClient,
+					useValue: {
+						get: jasmine.createSpy("get").and.returnValue(of([])),
+					},
+				},
+			],
 		}).compileComponents()
 
 		fixture = TestBed.createComponent(ProjectsComponent)
