@@ -113,6 +113,68 @@ origin  git@gitlab.com:tu_usuario/tu_repositorio.git (fetch)
 origin  git@gitlab.com:tu_usuario/tu_repositorio.git (push)
 ```
 
+## GitHub (comandos equivalentes)
+
+Los pasos para GitHub son equivalentes a GitLab, con pequeñas diferencias en la URL y en la interfaz web donde se añade la clave.
+
+- Añadir la clave pública en GitHub: `Settings` → `SSH and GPG keys` → `New SSH key`.
+
+- Probar la conexión SSH a GitHub:
+
+```bash
+ssh -T git@github.com
+```
+
+Respuesta esperada:
+
+```
+Hi tu_usuario! You've successfully authenticated, but GitHub does not provide shell access.
+```
+
+- Ver en modo verboso si hay problemas:
+
+```bash
+ssh -vvv -T git@github.com
+```
+
+- Clonar con SSH en GitHub:
+
+```bash
+git clone git@github.com:tu_usuario/tu_repositorio.git
+```
+
+- Cambiar un remoto existente de HTTPS a SSH (GitHub):
+
+```bash
+git remote set-url origin git@github.com:tu_usuario/tu_repositorio.git
+git remote -v
+```
+
+- Configuración de múltiples claves para GitHub (ejemplo en `~/.ssh/config`):
+
+```
+Host github-personal
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519
+
+Host github-work
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519_work
+```
+
+Usar al clonar:
+
+```bash
+git clone git@github-personal:tu_usuario/tu_repositorio.git
+```
+
+Notas:
+- GitHub y GitLab usan el mismo formato de URL SSH (`git@<host>:owner/repo.git`).
+- Asegúrate de copiar la clave pública completa (`cat ~/.ssh/id_ed25519.pub`) al añadirla en la web.
+
+
 ## Problemas comunes
 
 | Problema | Solución |
