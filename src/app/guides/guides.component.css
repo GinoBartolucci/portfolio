@@ -14,7 +14,7 @@
   word-break: break-word;
 }
 
-:host ::ng-deep .markdown-content :is(h1, h2, h3, h4, h5, h6) {
+:host ::ng-deep .markdown-content :is(h1,h2,h3,h4,h5,h6) {
   scroll-margin-top: 6rem;
   color: #111827;
   font-weight: 500;
@@ -41,26 +41,19 @@
   font-size: 1.08rem;
 }
 
-:host ::ng-deep .markdown-content h4,
-:host ::ng-deep .markdown-content h5,
-:host ::ng-deep .markdown-content h6 {
+:host ::ng-deep .markdown-content h4,:host ::ng-deep .markdown-content h5,:host ::ng-deep .markdown-content h6 {
   margin: 1.35rem 0 0.5rem;
   font-size: 0.95rem;
 }
 
-:host ::ng-deep .markdown-content :is(h1, h2, h3, h4, h5, h6) code {
+:host ::ng-deep .markdown-content :is(h1,h2,h3,h4,h5,h6) code {
   background: transparent;
   padding: 0;
   font-size: inherit;
   color: inherit;
 }
 
-:host ::ng-deep .markdown-content p,
-:host ::ng-deep .markdown-content ul,
-:host ::ng-deep .markdown-content ol,
-:host ::ng-deep .markdown-content blockquote,
-:host ::ng-deep .markdown-content table,
-:host ::ng-deep .markdown-content hr {
+:host ::ng-deep .markdown-content p,:host ::ng-deep .markdown-content ul,:host ::ng-deep .markdown-content ol,:host ::ng-deep .markdown-content blockquote,:host ::ng-deep .markdown-content table,:host ::ng-deep .markdown-content hr {
   margin: 1rem 0 1.1rem;
 }
 
@@ -78,8 +71,7 @@
   color: #374151;
 }
 
-:host ::ng-deep .markdown-content ul,
-:host ::ng-deep .markdown-content ol {
+:host ::ng-deep .markdown-content ul,:host ::ng-deep .markdown-content ol {
   display: block;
   padding-left: 1.55rem;
   margin-left: 0;
@@ -191,15 +183,6 @@
   background: #f8fafc;
   font-size: 0.92rem;
   font-weight: 700;
-}
-
-:host ::ng-deep .markdown-content th,
-:host ::ng-deep .markdown-content td {
-  border: 1px solid #e5e7eb;
-  padding: 0.85rem 0.95rem;
-  text-align: left;
-  vertical-align: top;
-  overflow-wrap: anywhere;
 }
 
 :host ::ng-deep .markdown-content tbody tr:nth-child(even) {
